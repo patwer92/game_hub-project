@@ -18,17 +18,16 @@ body {
 
 .nav-logo {
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
 }
 
 #header-logo {
-    width: 20rem;
+    width: 15rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     background-color: #09090a;
     position: fixed;
@@ -47,7 +46,7 @@ nav a:hover {
 
 li,
 a {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-decoration: none;
     list-style: none;
     text-transform: uppercase;
@@ -75,7 +74,7 @@ a {
 #cart-icon,
 #profile-icon {
     margin: 2rem;
-    width: 3rem;
+    width: 2.5rem;
 }
 
 /* HOME PAGE SECTION */
@@ -94,8 +93,8 @@ a {
 .home-container {
     margin-top: 15rem;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 100rem;
-    width: 100rem;
+    height: 85rem;
+    width: 85rem;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -105,18 +104,18 @@ a {
 
 .home-container h1 {
     color: whitesmoke;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
 
 .home-logo {
-    width: 60rem;
+    width: 50rem;
 }
 
 .button-container {
     width: 80rem;
-    height: 20rem;
+    height: 15rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -128,7 +127,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
-    width: 25rem;
+    width: 22.5rem;
     height: 7rem;
     border-radius: 5rem;
     border: none;
