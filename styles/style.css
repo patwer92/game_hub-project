@@ -52,7 +52,7 @@ h4 {
 }
 
 hr {
-    width: 90%;
+    max-width: 90%;
     margin-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
@@ -114,7 +114,7 @@ nav a:hover {
 /* HOME PAGE SECTION */
 
 .home-page {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(/images/homepage-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +294,7 @@ nav a:hover {
 /* COMING GAMES SECTION */
 
 .coming_games-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .coming-text {
@@ -390,13 +390,11 @@ nav a:hover {
 /* BESTSELLER / TOP RANKED GAMES SECTION */
 
 .top_ranked-section {
-    margin-top: 10rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .best_top-container {
     margin: auto;
-    margin-top: 20rem;
     height: 90.3rem;
     width: 80%;
     display: flex;
