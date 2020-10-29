@@ -24,6 +24,12 @@ a {
     /*background: red;*/
 }
 
+h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 h2 {
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -46,7 +52,7 @@ h4 {
 }
 
 hr {
-    width: 80%;
+    width: 90%;
     margin-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
@@ -66,7 +72,7 @@ header {
     z-index: 98;
 }
 
-.nav_links {
+.nav-links {
     width: 60rem;
     display: flex;
     flex-direction: row;
@@ -102,12 +108,12 @@ nav a:hover {
 #cart-icon,
 #profile-icon {
     margin: 2rem;
-    width: 4rem;
+    width: 3rem;
 }
 
 /* HOME PAGE SECTION */
 
-.home_page {
+.home-page {
     height: 100vh;
     background-image: url(/images/homepage-img.jpg);
     background-repeat: no-repeat;
@@ -118,7 +124,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.home_container {
+.home-container {
     margin-top: 15rem;
     background-color: rgba(0, 0, 0, 0.7);
     height: 85rem;
@@ -131,17 +137,11 @@ nav a:hover {
     position: absolute;
 }
 
-.home_container h1 {
-    color: whitesmoke;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.home_logo {
+.home-logo {
     width: 50rem;
 }
 
-.button_container {
+.button-container {
     width: 80rem;
     height: 15rem;
     display: flex;
@@ -199,7 +199,7 @@ nav a:hover {
 }
 
 .recommended-text {
-    margin: 5rem 0 2rem 26rem;
+    margin: 5rem 0 2rem 12rem;
 }
 
 /* RECOMMENDED GAMES | GRID-CONTAINER */
@@ -298,7 +298,7 @@ nav a:hover {
 }
 
 .coming-text {
-    margin: 5rem 0 2rem 26rem;
+    margin: 5rem 0 2rem 12rem;
 }
 
 /* COMING GAMES | GRID-CONTAINER */
@@ -396,6 +396,7 @@ nav a:hover {
 
 .best_top-container {
     margin: auto;
+    margin-top: 20rem;
     height: 90.3rem;
     width: 80%;
     display: flex;
@@ -604,6 +605,7 @@ footer {
 
 .nav-dots {
     margin-top: 3rem;
+    margin-bottom: 20rem;
     height: 5rem;
     display: flex;
     justify-content: center;
