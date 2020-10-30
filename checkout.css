@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(rgb(36, 170, 235), rgb(21, 91, 212));
+    font-family: "Poppins", sans-serif;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+    /*background: red;*/
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    top: 0px;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
+    /*background: rgba(0, 0, 0, 0.9);*/
+    position: sticky;
+    z-index: 98;
+}
+
+.nav-links {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+nav a:hover {
+    color: rgb(28, 163, 247);
+}
+
+.nav_logo {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+#header_logo {
+    width: 15rem;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-icon,
+#games-icon,
+#about-icon,
+#search-icon,
+#cart-icon,
+#profile-icon {
+    margin: 2rem;
+    width: 3rem;
+}
+
+/* CHECKOUT PAGE SECTION */
+
+.checkout-section {
+    min-height: 88.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-container {
+    height: 90rem;
+    min-width: 200rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.details-container {
+    background: #1a2745;
+    min-width: 50%;
+    height: 70rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-radius: 2rem;
+}
+
+.order-details,
+.summary-details {
+    min-width: 100%;
+    min-height: 7rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
+}
+
+.summary-details h1,
+.order-details h1 {
+    margin: auto;
+}
+
+.order-row {
+    width: 90%;
+    margin: auto;
+    border-radius: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    background: #1a3983;
+}
+
+.order-box1,
+.order-box2 {
+    min-height: 30rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.order-game {
+    width: 30rem;
+    height: 100%;
+}
+
+.order-game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.order-title {
+    min-height: 100%;
+    width: 30rem;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-title p {
+    margin-top: 15%;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.order-price {
+    margin-right: 5%;
+    min-height: 100%;
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: whitesmoke;
+}
+
+.far {
+    margin-top: 20%;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.summary-container {
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary {
+    width: 100%;
+    height: 70rem;
+    background: #1a2745;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-box1 {
+    margin: auto;
+    width: 90%;
+    height: 40%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #1a3983;
+}
+
+.summary-box1 h2 {
+    margin: 7% 0 0 10%;
+}
+
+.summary-box1 p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 5% 0 10% 10%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.summary-box2 {
+    margin: auto;
+    width: 90%;
+    height: 20%;
+    border-radius: 2rem;
+    background: #1a3983;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.summary-box2 h2 {
+    margin: 5% 10%;
+    color: white;
+    font-size: 2rem;
+}
+
+.proceed-btn {
+    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
+    width: 100%;
+    height: 8rem;
+    border-radius: 5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    cursor: pointer;
+}

@@ -516,7 +516,7 @@ nav a:hover {
 /* FOOTER */
 
 footer {
-    background: black;
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
 }
 
 .footer-container {
@@ -554,7 +554,7 @@ footer {
 }
 
 .fab:hover {
-    color: blue;
+    color: lightskyblue;
 }
 
 .copyright {

@@ -128,7 +128,6 @@ nav a:hover {
 }
 
 .signup-container a {
-    margin-top: 2rem;
     font-size: 2rem;
 }
 
@@ -157,7 +156,7 @@ nav a:hover {
 }
 
 .have-acc {
+    padding-top: 5rem;
     color: rgb(80, 80, 80);
     font-size: 1rem;
-    cursor: pointer;
 }
