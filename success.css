@@ -26,8 +26,8 @@ a {
 h1 {
     color: whitesmoke;
     font-size: 2rem;
-    letter-spacing: 0.25rem;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 h2 {
@@ -43,14 +43,13 @@ hr {
 /* HEADER */
 
 header {
-    top: 0px;
     height: 15rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
     /*background: rgba(0, 0, 0, 0.9);*/
-    position: sticky;
+    position: fixed;
     z-index: 98;
 }
 
@@ -93,25 +92,38 @@ nav a:hover {
     width: 3rem;
 }
 
-/* CHECKOUT PAGE SECTION */
+/* SUCCESS PAGE SECTION */
 
-.checkout-section {
-    min-height: 88.8vh;
+.success-section {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.checkout-container {
-    height: 90rem;
-    min-width: 200rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.far {
+    margin: 25% auto 5% auto;
+    font-size: 20rem;
+    color: rgb(14, 236, 14);
 }
 
-.order-details,
-.summary-details {
+.success-container {
+    min-height: 120rem;
+    min-width: 80rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.success {
+    min-height: 60rem;
+    min-width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #1a2745;
+}
+
+.order-info {
     min-width: 100%;
     min-height: 7rem;
     display: flex;
@@ -121,20 +133,25 @@ nav a:hover {
     background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
 }
 
-.summary-details h1,
-.order-details h1 {
+.order-info h1 {
     margin: auto;
 }
-
-/* ORDER DETAILS BOX */
-
-.details-container {
-    background: #1a2745;
-    min-width: 50%;
-    height: 70rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+.order-box1,
+.order-box2 {
+    min-height: 20rem;
+    min-width: 100%;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #1a2745;
+}
+
+.order-box1 {
+    margin-top: 5%;
+}
+
+.order-box2 {
+    margin-bottom: 5%;
 }
 
 .order-row {
@@ -147,16 +164,8 @@ nav a:hover {
     background: #1a3983;
 }
 
-.order-box1,
-.order-box2 {
-    min-height: 30rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 .order-game {
-    width: 30rem;
+    min-width: 30rem;
     height: 100%;
 }
 
@@ -165,9 +174,10 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
 }
+
 .order-title {
     min-height: 100%;
-    width: 30rem;
+    min-width: 30rem;
     margin-left: 2%;
     display: flex;
     flex-direction: column;
@@ -175,94 +185,16 @@ nav a:hover {
 }
 
 .order-title p {
-    margin-top: 15%;
+    margin-top: 5%;
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.order-price {
-    margin-right: 5%;
-    min-height: 100%;
-    min-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    color: whitesmoke;
-}
-
-.far {
-    margin-top: 20%;
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
-/* ORDER SUMMARY BOX */
-
-.summary-container {
-    width: 50rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.summary {
-    width: 100%;
-    height: 70rem;
-    background: #1a2745;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.summary-box1 {
-    margin: auto;
-    width: 90%;
-    height: 40%;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    background: #1a3983;
-}
-
-.summary-box1 h2 {
-    margin: 7% 0 0 10%;
-}
-
-.summary-box1 p {
-    color: whitesmoke;
-    font-size: 1.5rem;
-    margin: 5% 0 10% 10%;
-}
-
-span {
-    font-weight: bold;
-}
-
-.summary-box2 {
-    margin: auto;
-    width: 90%;
-    height: 20%;
-    border-radius: 2rem;
-    background: #1a3983;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.summary-box2 h2 {
-    margin: 5% 10%;
-    color: white;
-    font-size: 2rem;
-}
-
-/* 'PROCEED TO CHECKOUT' BUTTON */
-
-.proceed-btn {
+.download-btn {
+    margin: 5% auto;
     background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
-    min-width: 40rem;
+    width: 40rem;
     min-height: 8rem;
     border-radius: 5rem;
     border: none;
