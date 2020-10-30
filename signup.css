@@ -33,7 +33,7 @@ h1 {
 /* HEADER */
 
 header {
-    height: 15rem;
+    height: 12rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ nav a:hover {
 
 .nav_logo {
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: auto;
 }
 
 #header_logo {
@@ -79,7 +79,7 @@ nav a:hover {
 #cart-icon,
 #profile-icon {
     margin: 2rem;
-    width: 3rem;
+    width: 2rem;
 }
 
 /* LOGIN PAGE SECTION */

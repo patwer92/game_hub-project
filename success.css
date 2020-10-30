@@ -43,12 +43,12 @@ hr {
 /* HEADER */
 
 header {
-    height: 15rem;
+    top: 0rem;
+    height: 12rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
-    /*background: rgba(0, 0, 0, 0.9);*/
     position: fixed;
     z-index: 98;
 }
@@ -68,7 +68,7 @@ nav a:hover {
 
 .nav_logo {
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: auto;
 }
 
 #header_logo {
@@ -89,7 +89,7 @@ nav a:hover {
 #cart-icon,
 #profile-icon {
     margin: 2rem;
-    width: 3rem;
+    width: 2rem;
 }
 
 /* SUCCESS PAGE SECTION */
@@ -97,21 +97,40 @@ nav a:hover {
 .success-section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
+.success-text {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+    color: rgb(219, 211, 211);
+}
+
+.success-text p {
+    min-width: 30rem;
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-right: 5%;
+}
+
 .far {
-    margin: 25% auto 5% auto;
-    font-size: 20rem;
+    margin: 0;
+    font-size: 15rem;
     color: rgb(14, 236, 14);
 }
 
 .success-container {
-    min-height: 120rem;
+    margin-bottom: 2.5%;
+    min-height: 80rem;
     min-width: 80rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .success {
@@ -165,7 +184,7 @@ nav a:hover {
 }
 
 .order-game {
-    min-width: 30rem;
+    max-width: 30rem;
     height: 100%;
 }
 
