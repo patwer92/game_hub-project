@@ -25,7 +25,7 @@ a {
 
 h1 {
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
@@ -98,8 +98,8 @@ nav a:hover {
 .circle-container {
     margin-top: 15rem;
     background-image: linear-gradient(rgb(233, 2, 222), rgb(21, 198, 212));
-    height: 85rem;
-    width: 85rem;
+    height: 60rem;
+    width: 60rem;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -109,13 +109,13 @@ nav a:hover {
 }
 
 .circle-container img {
-    margin-top: 12rem;
-    width: 50rem;
+    margin-top: 2.9%;
+    width: 40rem;
 }
 
 .signup-container {
-    min-height: 40rem;
-    min-width: 30rem;
+    min-height: 20rem;
+    min-width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -123,31 +123,31 @@ nav a:hover {
 
 .signup-container p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .signup-container a {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .user-input {
     width: 100%;
     border-radius: 2.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     border: none;
-    margin-top: 1rem;
+    margin-top: 2.5%;
 }
 
 .signup-btn {
     margin-top: 1rem;
     background-image: linear-gradient(rgb(233, 2, 222), rgb(117, 1, 111));
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     border-radius: 5rem;
     border: none;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ nav a:hover {
 }
 
 .have-acc {
-    padding-top: 5rem;
+    padding-top: 1rem;
     color: rgb(80, 80, 80);
     font-size: 1rem;
 }

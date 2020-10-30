@@ -50,7 +50,7 @@ header {
     justify-content: space-between;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
     /*background: rgba(0, 0, 0, 0.9);*/
-    position: sticky;
+    position: fixed;
     z-index: 98;
 }
 
@@ -96,7 +96,7 @@ nav a:hover {
 /* CHECKOUT PAGE SECTION */
 
 .checkout-section {
-    min-height: 85.2vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +131,7 @@ nav a:hover {
 .details-container {
     background: #1a2745;
     width: 60rem;
-    height: 45rem;
+    height: 100%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-radius: 2rem;
@@ -150,8 +150,7 @@ nav a:hover {
 .order-box1,
 .order-box2 {
     margin-top: 5%;
-    margin-bottom: 5%;
-    height: 15rem;
+    height: 20rem;
     width: 100%;
     display: flex;
     flex-direction: column;
