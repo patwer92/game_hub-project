@@ -66,10 +66,12 @@ hr {
 /* HEADER SECTION */
 
 header {
-    height: 12rem;
+    top: 0px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
     /*background: rgba(0, 0, 0, 0.9);*/
     position: fixed;
@@ -77,21 +79,24 @@ header {
 }
 
 .nav-links {
-    width: 60rem;
+    width: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 3rem;
+    margin-top: 1%;
 }
 
 nav a:hover {
     color: rgb(28, 163, 247);
 }
 
-.nav_logo {
+.nav_logo-desktop {
+    margin-top: 1%;
+}
+
+.nav_logo-mobile {
     text-align: center;
-    margin-top: auto;
+    display: none;
 }
 
 #header_logo {
@@ -111,7 +116,8 @@ nav a:hover {
 #search-icon,
 #cart-icon,
 #profile-icon {
-    margin: 2rem;
+    margin-bottom: 0.5rem;
+
     width: 2rem;
 }
 
@@ -119,7 +125,7 @@ nav a:hover {
 
 .home-page {
     min-height: 100vh;
-    background-image: url(/images/home-img.jpg);
+    background-image: url(/images/homepage-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -158,11 +164,11 @@ nav a:hover {
 }
 
 .btn {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
     width: 20rem;
     height: 5rem;
     border-radius: 5rem;
@@ -190,13 +196,20 @@ nav a:hover {
     min-height: 48.7vh;
 }
 
+.highlighted {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .highlighted-games {
     width: 100%;
-    min-height: 50rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: blue;
     background-image: url(/images/highlighted-games.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,9 +222,8 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .overlay-text {
@@ -238,7 +250,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: 0;
     height: 8rem;
     width: 20rem;
 }
@@ -323,8 +335,8 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 130rem;
-    width: 105rem;
+    min-height: auto;
+    width: 120rem;
     flex-wrap: wrap;
 }
 
@@ -343,8 +355,8 @@ nav a:hover {
 
 .rec-box1 {
     background-image: url(/images/recommended_games/fallguys.jpg);
-    width: 70rem;
-    height: 50rem;
+    width: 102.5rem;
+    height: 40rem;
     margin: 1%;
 }
 
@@ -447,8 +459,8 @@ nav a:hover {
 
 .coming-box1 {
     background-image: url(/images/recommended_games/fallguys.jpg);
-    width: 70rem;
-    height: 50rem;
+    width: 102.5rem;
+    height: 40rem;
     margin: 1%;
 }
 
@@ -519,36 +531,40 @@ nav a:hover {
 .top_ranked-section {
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .best_top-container {
     margin: auto;
-    height: 65rem;
-    width: 100rem;
+    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .best-container {
     margin: 2%;
-    width: 82rem;
+    width: 50rem;
 }
 
 .top-container {
     margin: 2%;
-    width: 82rem;
+    width: 50rem;
 }
 
 .ranked-text {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 1rem 2rem;
+    margin: 5% 0;
 }
 
 .row-container {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     margin-bottom: 0.5rem;
     background: white;
@@ -560,7 +576,14 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(11, 39, 107);
+}
+
+.ranking-blue {
+    background-image: linear-gradient(rgb(21, 198, 212), rgb(11, 99, 106));
+}
+
+.ranking-purple {
+    background-image: linear-gradient(rgb(233, 2, 222), rgb(117, 1, 111));
 }
 
 .row_ranking-box p {
@@ -600,7 +623,7 @@ nav a:hover {
 }
 
 .row_game-title p {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .row_price-text {
@@ -617,6 +640,20 @@ nav a:hover {
 
 .row_current-price {
     color: rgb(29, 219, 29);
+    font-size: 1.5rem;
+}
+
+.row-discount {
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: rgb(28, 163, 247);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -649,7 +686,8 @@ nav a:hover {
 /* FOOTER */
 
 footer {
-    height: 60vh;
+    height: auto;
+
     background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
     display: flex;
     flex-direction: column;
@@ -695,10 +733,245 @@ footer {
 }
 
 .copyright {
+    margin-top: 10%;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
+
+/* MEDIA QUERIES */
+
+/* HEADER RESPONSIVE MODE */
+
+@media screen and (max-width: 960px) {
+    .nav_logo-desktop {
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        margin-top: 1%;
+        display: block;
+    }
+
+    #header_logo {
+        width: 10rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box li {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* HOME PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 620px) {
+    .home-page {
+        margin-top: 12rem;
+        background-size: 250%;
+        background-position: top;
+        min-height: 100vh;
+    }
+
+    .home-container {
+        margin-top: -10rem;
+        height: 35rem;
+        width: 35rem;
+    }
+
+    .home-container img {
+        margin-top: 5rem;
+        width: 25rem;
+    }
+
+    .home-container h1 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 5%;
+    }
+
+    .button-container {
+        width: 28rem;
+        height: 20rem;
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-top: 0;
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* HIGHLIGHTED SECTION RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
+    .highlighted {
+        margin-top: -12rem;
+    }
+
+    .highlighted-games {
+        background-size: cover;
+        background-position: right;
+        min-height: 50rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .highlighted-games {
+        background-position-x: -900px;
+    }
+
+    .overlay {
+        min-height: 10rem;
+        margin-top: -0rem;
+    }
+
+    .overlay-text {
+        margin: 0 5%;
+        background: red;
+        height: 6rem;
+        width: 15rem;
+    }
+
+    .overlay-text h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .overlay-price {
+        background: blue;
+        height: 6rem;
+        width: 13rem;
+    }
+
+    .previous-price {
+        font-size: 1rem;
+    }
+
+    .current-price {
+        font-size: 1.3rem;
+    }
+
+    .discount {
+        height: 4rem;
+        width: 4rem;
+        padding: 0;
+    }
+
+    .discount p {
+        font-size: 1.2rem;
+    }
+
+    .overlay_call-to-action {
+        height: 6rem;
+    }
+
+    .overlay_cart-btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    #overlay_cart-icon {
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
+
+@media screen and (max-width: 1595px) {
+    .horizontal_rec-box1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .horizontal_rec-box2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .horizontal_rec-box3 {
+        display: none;
+    }
+}
+
+/* COMING GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
+
+@media screen and (max-width: 1595px) {
+    .horizontal_coming-box1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .horizontal_coming-box2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .horizontal_coming-box3 {
+        display: none;
+    }
+}
+
+/* MAIN GAMES CONTAINER RESPONSIVE MODE */
+
+@media screen and (max-width: 1260px) {
+    .games-container {
+        width: auto;
+    }
+}
+
+/* RECOMMENDED GAMES RESPONSIVE MODE */
+
+@media screen and (max-width: 810px) {
+    .rec-box1 {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rec-box1,
+    .rec-box2,
+    .rec-box3,
+    .rec-box4,
+    .rec-box5 {
+        width: 35rem;
+        height: 20rem;
+    }
+}
+
+/* COMING GAMES RESPONSIVE MODE */
+
+@media screen and (max-width: 810px) {
+    .coming-box1 {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .coming-box1,
+    .coming-box2,
+    .coming-box3,
+    .coming-box4,
+    .coming-box5 {
+        width: 35rem;
+        height: 20rem;
+    }
+}
+
 /* -------------- GLOBAL STYLING CLASSES -------------- */
 
 /* NAVIGATION BUTTONS FOR IMAGES (LEFT / RIGHT) */
@@ -735,7 +1008,6 @@ footer {
 
 .nav-dots {
     margin-top: 3rem;
-    margin-bottom: 20rem;
     height: 5rem;
     display: flex;
     justify-content: center;
@@ -756,7 +1028,8 @@ footer {
 /* STYLING OF THE OVERLAY CONTAINER IN THE LARGEST BOX OF MAIN GAMES SECTION */
 
 .big-overlay {
-    height: 15rem;
+    height: 10rem;
+    min-width: auto;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-evenly;
@@ -807,7 +1080,7 @@ footer {
 }
 
 .big_price-text {
-    width: 12rem;
+    width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -856,9 +1129,9 @@ footer {
 /* STYLING OF THE SMALL OVERLAY CONTAINERS IN THE MAIN AND HORIZONTAL GAMING CONTENT  */
 
 .small-overlay {
-    height: 10rem;
+    height: 8rem;
     min-width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;

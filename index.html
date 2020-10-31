@@ -19,6 +19,10 @@
     <body>
         <header>
             <nav>
+                <div class="nav_logo-mobile">
+                    <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
+                </div>
+
                 <ul class="nav-links">
                     <div class="icon-box">
                         <a href="index.html"
@@ -37,7 +41,7 @@
                 </ul>
             </nav>
 
-            <div class="nav_logo">
+            <div class="nav_logo-desktop">
                 <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
             </div>
 
@@ -78,16 +82,17 @@
                 </div>
             </section>
             <section class="highlighted_games-section">
-                <div class="highlighted-games">
+            <div class="highlighted">
+                <div class="game-nav highlighted_nav-width">
+                    <div class="previousgame">
+                        <p><</p>
+                    </div>
+                    <div class="nextgame">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="highlighted-games"> 
                     <div class="overlay">
-                        <div class="game-nav highlighted_nav-width">
-                            <div class="previousgame">
-                                <p><</p>
-                            </div>
-                            <div class="nextgame">
-                                <p>></p>
-                            </div>
-                        </div>
                         <div class="overlay-text">
                             <h4>Just Cause 4</h4>
                             <p>Standard Edition</p>
@@ -115,6 +120,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="nav-dots">
                     <div class="nav-circle circle1"></div>
                     <div class="nav-circle circle2"></div>
@@ -129,27 +135,27 @@
                 <hr />
                 <div class="games-container">
                     <div class="rec-box1">
-                        <div class="big-overlay">
-                            <div class="big-text">
+                        <div class="small-overlay">
+                            <div class="small-text">
                                 <a href="checkout.html">Fall guys ultimate knockout</a>
 
                                 <p>Standard Edition</p>
                                 <p><strong>PC</strong></p>
                             </div>
-                            <div class="big-price">
-                                <p class="big_price-text">
-                                    <span class="big_prev-price">23.63 USD</span>
-                                    <span class="big_current-price">20.37 USD</span>
+                            <div class="small-price">
+                                <p class="small_price-text">
+                                    <span class="small_prev-price">23.63 USD</span>
+                                    <span class="small_current-price">20.37 USD</span>
                                 </p>
-                                <div class="big-discount">
+                                <div class="small-discount">
                                     <p>-13%</p>
                                 </div>
                             </div>
-                            <div class="big_call-to-action">
+                            <div class="small_call-to-action">
                                 <a href="checkout.html"
-                                    ><button class="big_cart-btn">
+                                    ><button class="small_cart-btn">
                                         <img
-                                            id="big_cart-icon"
+                                            id="small_cart-icon"
                                             src="/images/icons/cart-icon.png"
                                             alt="Shopping Cart Icon"
                                         />add to cart
@@ -447,27 +453,27 @@
                 <hr />
                 <div class="games-container">
                     <div class="coming-box1">
-                        <div class="big-overlay">
-                            <div class="big-text">
+                        <div class="small-overlay">
+                            <div class="small-text">
                                 <a href="checkout.html">Fall guys ultimate knockout</a>
 
                                 <p>Standard Edition</p>
                                 <p><strong>PC</strong></p>
                             </div>
-                            <div class="big-price">
-                                <p class="big_price-text">
-                                    <span class="big_prev-price">23.63 USD</span>
-                                    <span class="big_current-price">20.37 USD</span>
+                            <div class="small-price">
+                                <p class="small_price-text">
+                                    <span class="small_prev-price">23.63 USD</span>
+                                    <span class="small_current-price">20.37 USD</span>
                                 </p>
-                                <div class="big-discount">
+                                <div class="small-discount">
                                     <p>-13%</p>
                                 </div>
                             </div>
-                            <div class="big_call-to-action">
+                            <div class="small_call-to-action">
                                 <a href="checkout.html"
-                                    ><button class="big_cart-btn">
+                                    ><button class="small_cart-btn">
                                         <img
-                                            id="big_cart-icon"
+                                            id="small_cart-icon"
                                             src="/images/icons/cart-icon.png"
                                             alt="Shopping Cart Icon"
                                         />add to cart
@@ -760,7 +766,7 @@
                     <div class="best-container">
                         <h3 class="ranked-text">Bestsellers</h3>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>1</p>
                             </div>
                             <div class="row_image-box">
@@ -775,13 +781,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>2</p>
                             </div>
                             <div class="row_image-box">
@@ -796,13 +805,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>3</p>
                             </div>
                             <div class="row_image-box">
@@ -817,13 +829,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>4</p>
                             </div>
                             <div class="row_image-box">
@@ -838,13 +853,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>5</p>
                             </div>
                             <div class="row_image-box">
@@ -859,13 +877,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>6</p>
                             </div>
                             <div class="row_image-box">
@@ -880,13 +901,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>7</p>
                             </div>
                             <div class="row_image-box">
@@ -901,13 +925,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>8</p>
                             </div>
                             <div class="row_image-box">
@@ -922,13 +949,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>9</p>
                             </div>
                             <div class="row_image-box">
@@ -943,13 +973,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-blue">
                                 <p>10</p>
                             </div>
                             <div class="row_image-box">
@@ -964,8 +997,11 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
@@ -973,7 +1009,7 @@
                     <div class="top-container">
                         <h3 class="ranked-text">Top Ranked</h3>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>1</p>
                             </div>
                             <div class="row_image-box">
@@ -988,13 +1024,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>2</p>
                             </div>
                             <div class="row_image-box">
@@ -1009,13 +1048,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>3</p>
                             </div>
                             <div class="row_image-box">
@@ -1030,13 +1072,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>4</p>
                             </div>
                             <div class="row_image-box">
@@ -1051,13 +1096,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>5</p>
                             </div>
                             <div class="row_image-box">
@@ -1072,13 +1120,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>6</p>
                             </div>
                             <div class="row_image-box">
@@ -1093,13 +1144,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>  
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>7</p>
                             </div>
                             <div class="row_image-box">
@@ -1114,13 +1168,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>8</p>
                             </div>
                             <div class="row_image-box">
@@ -1135,13 +1192,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>9</p>
                             </div>
                             <div class="row_image-box">
@@ -1156,13 +1216,16 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row-container">
-                            <div class="row_ranking-box">
+                            <div class="row_ranking-box ranking-purple">
                                 <p>10</p>
                             </div>
                             <div class="row_image-box">
@@ -1177,8 +1240,11 @@
                                     <p><strong>PC</strong></p>
                                 </div>
                                 <div class="row_price-text">
-                                    <p class="row_prev-price">24.99 USD</p>
-                                    <p class="row_current-price">21.24 USD</p>
+                                    <span class="row_prev-price">24.99 USD</span>
+                                    <span class="row_current-price">21.24 USD</span>
+                                </div>
+                                <div class="row-discount">
+                                    <p>-13%</p>
                                 </div>
                             </div>
                         </div>
