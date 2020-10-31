@@ -316,7 +316,7 @@ nav a:hover {
     margin: 0rem 0 2rem 5%;
 }
 
-/* MAIN GAME-CONTAINER  */
+/* MAIN FLEXBOX 'GAMES-CONTAINER' FOR RECOMMENDED & COMING GAMES SECTIONS */
 
 .games-container {
     margin: auto;
@@ -379,7 +379,7 @@ nav a:hover {
 /* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX CONTAINER */
 
 .horizontal_flex-container {
-    height: 40rem;
+    height: 30rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -418,11 +418,6 @@ nav a:hover {
 }
 
 .horizontal_rec-box4 {
-    background-image: url(/images/recommended_games/crusaderkings3.jpg);
-    background-position: top;
-}
-
-.horizontal_rec-box5 {
     background-image: url(/images/recommended_games/projectcars3.jpg);
     background-position: center;
 }
@@ -516,10 +511,6 @@ nav a:hover {
 }
 
 .horizontal_coming-box4 {
-    background-image: url(/images/recommended_games/crusaderkings3.jpg);
-}
-
-.horizontal_coming-box5 {
     background-image: url(/images/recommended_games/projectcars3.jpg);
 }
 
@@ -765,7 +756,7 @@ footer {
 /* STYLING OF THE OVERLAY CONTAINER IN THE LARGEST BOX OF MAIN GAMES SECTION */
 
 .big-overlay {
-    height: 20vh;
+    height: 15rem;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-evenly;
@@ -787,7 +778,7 @@ footer {
 }
 
 .big-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: whitesmoke;
 }
 
@@ -880,10 +871,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 50%;
+    width: 15rem;
 }
 
-.small-text p a {
+.small-text a {
     font-size: 1.2rem;
     font-weight: 400;
     color: whitesmoke;
@@ -934,7 +925,7 @@ footer {
 }
 
 .small_current-price {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(53, 221, 53);
 }
 
@@ -942,7 +933,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 15rem;
     height: 100%;
 }
 
