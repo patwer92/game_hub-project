@@ -21,7 +21,6 @@ a {
     list-style: none;
     text-transform: uppercase;
     color: whitesmoke;
-    /*background: red;*/
 }
 
 span {
@@ -37,7 +36,7 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 1rem;
     color: whitesmoke;
@@ -52,7 +51,7 @@ h3 {
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -61,7 +60,7 @@ hr {
     margin-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 /* HEADER SECTION */
@@ -191,15 +190,120 @@ nav a:hover {
     min-height: 48.7vh;
 }
 
-.highlighted_games-img {
+.highlighted-games {
     width: 100%;
-    height: 70rem;
-    background-image: url(/images/highlighted-games.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background: blue;
+    background-image: url(/images/highlighted-games.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* STYLING OF THE OVERLAY CONTAINER */
+
+.overlay {
+    min-height: 20rem;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    width: 20rem;
+}
+
+.overlay-text h4 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.overlay-text p {
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.overlay-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    height: 8rem;
+    width: 20rem;
+}
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.previous-price {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 2.5rem;
+    color: rgb(53, 221, 53);
+}
+
+.discount {
+    margin-left: 5%;
+    background-color: rgb(28, 163, 247);
+    height: 6rem;
+    width: 6rem;
+    padding: 3rem;
+    border-radius: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount p {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.overlay_call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 8rem;
+}
+
+.overlay_cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgb(53, 221, 53);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#overlay_cart-icon {
+    width: 3rem;
+    margin-right: 1rem;
+    color: whitesmoke;
 }
 
 /* RECOMMENDED GAMES SECTION */
@@ -209,10 +313,20 @@ nav a:hover {
 }
 
 .recommended-text {
-    margin: 5rem 0 2rem 5%;
+    margin: 0rem 0 2rem 5%;
 }
 
-/* RECOMMENDED GAMES | GRID-CONTAINER */
+/* MAIN GAME-CONTAINER  */
+
+.games-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 130rem;
+    width: 105rem;
+    flex-wrap: wrap;
+}
 
 .rec-box1,
 .rec-box2,
@@ -224,35 +338,55 @@ nav a:hover {
     justify-content: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .rec-box1 {
     background-image: url(/images/recommended_games/fallguys.jpg);
-    background-position: top;
-    grid-row: 1/3;
+    width: 70rem;
+    height: 50rem;
+    margin: 1%;
 }
 
 .rec-box2 {
     background-image: url(/images/recommended_games/outerworlds.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .rec-box3 {
     background-image: url(/images/recommended_games/AC_Odyssey.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .rec-box4 {
     background-image: url(/images/recommended_games/borderlands3.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .rec-box5 {
     background-image: url(/images/recommended_games/NBA.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
-/* RECOMMENDED GAMES | HORIZONTAL FLEX-CONTAINER */
+/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX CONTAINER */
+
+.horizontal_flex-container {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: red;
+    justify-content: center;
+}
 
 .horizontal_rec-box1,
 .horizontal_rec-box2,
@@ -293,14 +427,6 @@ nav a:hover {
     background-position: center;
 }
 
-/*.horizontal_rec-box6 {
-    background-image: url(/images/recommended_games/WRC8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-}*/
-
 /* COMING GAMES SECTION */
 
 .coming_games-section {
@@ -310,8 +436,6 @@ nav a:hover {
 .coming-text {
     margin: 5rem 0 2rem 5%;
 }
-
-/* COMING GAMES | GRID-CONTAINER */
 
 .coming-box1,
 .coming-box2,
@@ -323,32 +447,42 @@ nav a:hover {
     justify-content: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .coming-box1 {
     background-image: url(/images/recommended_games/fallguys.jpg);
-    background-position: top;
-    grid-row: 1/3;
+    width: 70rem;
+    height: 50rem;
+    margin: 1%;
 }
 
 .coming-box2 {
     background-image: url(/images/recommended_games/outerworlds.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .coming-box3 {
     background-image: url(/images/recommended_games/AC_Odyssey.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .coming-box4 {
     background-image: url(/images/recommended_games/borderlands3.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 .coming-box5 {
     background-image: url(/images/recommended_games/NBA.jpg);
-    background-position: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1%;
 }
 
 /* COMING GAMES | HORIZONTAL FLEX-CONTAINER */
@@ -363,59 +497,54 @@ nav a:hover {
     flex-direction: column;
     justify-content: flex-end;
     background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
 .horizontal_coming-box1 {
     background-image: url(/images/recommended_games/fifa21.jpg);
-    background-position: center;
 }
 
 .horizontal_coming-box2 {
     background-image: url(/images/recommended_games/avengers.jpg);
-    background-position: left;
 }
 
 .horizontal_coming-box3 {
     background-image: url(/images/recommended_games/necromunda.jpg);
-    background-position: center;
 }
 
 .horizontal_coming-box4 {
     background-image: url(/images/recommended_games/crusaderkings3.jpg);
-    background-position: top;
 }
 
 .horizontal_coming-box5 {
     background-image: url(/images/recommended_games/projectcars3.jpg);
-    background-position: center;
 }
-
-/*.horizontal_coming-box6 {
-    background-image: url(/images/recommended_games/WRC8.jpg);
-    background-position: center;
-}*/
 
 /* BESTSELLER / TOP RANKED GAMES SECTION */
 
 .top_ranked-section {
     min-height: 100vh;
+    display: flex;
 }
 
 .best_top-container {
     margin: auto;
-    height: 90.3rem;
-    width: 80%;
+    height: 65rem;
+    width: 100rem;
     display: flex;
     justify-content: space-evenly;
 }
 
 .best-container {
+    margin: 2%;
     width: 82rem;
 }
 
 .top-container {
+    margin: 2%;
     width: 82rem;
 }
 
@@ -428,7 +557,7 @@ nav a:hover {
 
 .row-container {
     width: 100%;
-    height: 8rem;
+    height: 5rem;
     display: flex;
     margin-bottom: 0.5rem;
     background: white;
@@ -440,11 +569,12 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(8, 180, 238);
+    background: rgb(11, 39, 107);
 }
 
 .row_ranking-box p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
 }
 
 .row_image-box {
@@ -475,29 +605,31 @@ nav a:hover {
 }
 
 .row_game-title h5 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .row_game-title p {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .row_price-text {
     display: flex;
     flex-direction: column;
+    margin-right: 2%;
 }
 
 .row_prev-price {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: line-through;
 }
 
 .row_current-price {
     color: rgb(29, 219, 29);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
+/*
 .row_cart-btn {
     margin: 0 2rem;
     width: 14rem;
@@ -515,20 +647,25 @@ nav a:hover {
     color: whitesmoke;
 }
 
+
 #row_cart-icon {
     width: 2rem;
     margin-right: 1rem;
     color: whitesmoke;
 }
+*/
 
 /* FOOTER */
 
 footer {
+    height: 60vh;
     background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-container {
-    height: 50vh;
     width: 100%;
     color: whitesmoke;
     display: flex;
@@ -538,11 +675,12 @@ footer {
 
 .footer-info {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .contact {
     display: flex;
+    margin-top: 1rem;
 }
 
 .email,
@@ -552,11 +690,11 @@ footer {
 
 .far,
 .fas {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .fab {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-right: 2rem;
     cursor: pointer;
 }
@@ -566,7 +704,7 @@ footer {
 }
 
 .copyright {
-    color: white;
+    color: whitesmoke;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -580,14 +718,7 @@ footer {
     position: absolute;
     justify-content: space-between;
     align-items: center;
-}
-
-.highlighted_nav-width {
     width: 100%;
-}
-
-.horizontal_nav-width {
-    width: 80%;
 }
 
 .previousgame,
@@ -631,155 +762,28 @@ footer {
     background: lightgreen;
 }
 
-/* CSS GRID CONTAINER */
-
-.grid-container {
-    display: grid;
-    min-height: 50rem;
-    width: 180rem;
-    grid-gap: 2.5rem;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-/* HORIZONTAL FLEX-BOX CONTAINER */
-
-.horizontal_flex-container {
-    margin: auto;
-    height: 50rem;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: red;
-    justify-content: center;
-}
-
-/* GLOBAL STYLING OF THE OVERLAY CONTAINER */
-
-.overlay {
-    min-height: 20rem;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay-text {
-    margin: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 10rem;
-    width: 30rem;
-}
-
-.overlay-text p a {
-    font-size: 4rem;
-    color: whitesmoke;
-    margin-bottom: 1rem;
-}
-
-.overlay-text p {
-    font-size: 1.5rem;
-    color: whitesmoke;
-}
-
-.overlay-price {
-    display: flex;
-    margin: 0 4rem 0 30rem;
-}
-
-.price-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.previous-price {
-    font-size: 2rem;
-    color: whitesmoke;
-    text-decoration: line-through;
-}
-
-.current-price {
-    font-size: 4rem;
-    color: rgb(53, 221, 53);
-}
-
-.discount {
-    background-color: rgb(28, 163, 247);
-    height: 10rem;
-    width: 10rem;
-    padding: 2rem;
-    margin: 5rem;
-    border-radius: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.discount p {
-    font-size: 2.5rem;
-    color: whitesmoke;
-}
-
-.overlay_call-to-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40rem;
-    height: 100%;
-}
-
-.overlay_cart-btn {
-    margin: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 4rem;
-    border-radius: 3rem;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: rgb(53, 221, 53);
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-#overlay_cart-icon {
-    width: 5rem;
-    margin-right: 1rem;
-    color: whitesmoke;
-}
-
-/* GLOBAL STYLING OF OVERLAY IN THE LARGEST BOX OF CSS GRID (INDEX.HTML) */
+/* STYLING OF THE OVERLAY CONTAINER IN THE LARGEST BOX OF MAIN GAMES SECTION */
 
 .big-overlay {
-    height: 10vh;
+    height: 20vh;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .big-text {
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 10rem;
-    width: 22rem;
+    height: 100%;
+    min-width: 25rem;
 }
 
-.big-text p a {
+.big-text a {
     font-size: 1.5rem;
     color: whitesmoke;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .big-text p {
@@ -790,13 +794,16 @@ footer {
 .big-price {
     display: flex;
     align-items: center;
-    height: 12rem;
+    justify-content: center;
+    height: 100%;
+    width: 20rem;
 }
 
 .big-discount {
     background-color: rgb(28, 163, 247);
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
+    padding: 3rem;
     border-radius: 7rem;
     display: flex;
     justify-content: center;
@@ -804,12 +811,11 @@ footer {
 }
 
 .big-discount p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: whitesmoke;
 }
 
 .big_price-text {
-    margin-right: 1rem;
     width: 12rem;
     display: flex;
     flex-direction: column;
@@ -817,13 +823,13 @@ footer {
 }
 
 .big_prev-price {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: whitesmoke;
     text-decoration: line-through;
 }
 
 .big_current-price {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(53, 221, 53);
 }
 
@@ -831,20 +837,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 20rem;
     height: 100%;
 }
 
 .big_cart-btn {
-    width: 20rem;
-    margin: 0 1rem;
-    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem 3rem;
     border-radius: 3rem;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     background: rgb(53, 221, 53);
@@ -853,34 +857,33 @@ footer {
 }
 
 #big_cart-icon {
-    width: 3.5rem;
+    width: 3rem;
     margin-right: 1rem;
     color: whitesmoke;
 }
 
-/* GLOBAL STYLING OF THE SMALL OVERLAY CONTAINERS IN THE CSS GRID (INDEX.HTML). */
+/* STYLING OF THE SMALL OVERLAY CONTAINERS IN THE MAIN AND HORIZONTAL GAMING CONTENT  */
 
 .small-overlay {
-    height: 8rem;
-    width: 100%;
+    height: 10rem;
+    min-width: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .small-text {
-    margin-left: 0.5rem;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
 
 .small-text p a {
-    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
     color: whitesmoke;
@@ -894,13 +897,15 @@ footer {
 .small-price {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
-    width: 100%;
+    width: 50%;
     flex-wrap: wrap;
 }
 
 .small-discount {
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     padding: 1rem;
     background-color: rgb(28, 163, 247);
     height: 4rem;
@@ -937,20 +942,20 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 35%;
     height: 100%;
 }
 
 .small_cart-btn {
     width: 100%;
-    margin-right: 0.5rem;
+    height: 4rem;
     padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
     border: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
     background: rgb(53, 221, 53);
