@@ -812,10 +812,6 @@ footer {
 /* HIGHLIGHTED SECTION RESPONSIVE MODE */
 
 @media screen and (max-width: 1300px) {
-    .highlighted {
-        margin-top: -12rem;
-    }
-
     .highlighted-games {
         background-size: cover;
         background-position: right;
@@ -824,6 +820,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .highlighted {
+        margin-top: -16rem;
+    }
+
     .highlighted-games {
         background-position-x: -900px;
     }
