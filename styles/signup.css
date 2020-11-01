@@ -212,7 +212,7 @@ nav a:hover {
     }
 
     #header_logo {
-        width: 10rem;
+        width: 7rem;
     }
 
     header {
@@ -227,5 +227,15 @@ nav a:hover {
 
     .search form {
         display: none;
+    }
+
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
     }
 }

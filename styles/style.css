@@ -756,7 +756,7 @@ footer {
     }
 
     #header_logo {
-        width: 10rem;
+        width: 7rem;
     }
 
     header {
@@ -772,6 +772,16 @@ footer {
     .search form {
         display: none;
     }
+
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
 }
 
 /* HOME PAGE RESPONSIVE MODE */
@@ -785,14 +795,14 @@ footer {
     }
 
     .home-container {
-        margin-top: -10rem;
-        height: 35rem;
-        width: 35rem;
+        margin-bottom: 30rem;
+        height: 40rem;
+        width: 40rem;
     }
 
     .home-container img {
         margin-top: 5rem;
-        width: 25rem;
+        width: 20rem;
     }
 
     .home-container h1 {
@@ -802,7 +812,8 @@ footer {
     }
 
     .button-container {
-        width: 28rem;
+        margin-top: 5rem;
+        width: 40rem;
         height: 20rem;
         align-items: flex-start;
     }
@@ -1027,107 +1038,6 @@ footer {
 
 .circle1 {
     background: lightgreen;
-}
-
-/* STYLING OF THE OVERLAY CONTAINER IN THE LARGEST BOX OF MAIN GAMES SECTION */
-
-.big-overlay {
-    height: 10rem;
-    min-width: auto;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.big-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    min-width: 25rem;
-}
-
-.big-text a {
-    font-size: 1.5rem;
-    color: whitesmoke;
-    margin-bottom: 1.5rem;
-}
-
-.big-text p {
-    font-size: 1.2rem;
-    color: whitesmoke;
-}
-
-.big-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 20rem;
-}
-
-.big-discount {
-    background-color: rgb(28, 163, 247);
-    height: 6rem;
-    width: 6rem;
-    padding: 3rem;
-    border-radius: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.big-discount p {
-    font-size: 2rem;
-    color: whitesmoke;
-}
-
-.big_price-text {
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.big_prev-price {
-    font-size: 1.2rem;
-    color: whitesmoke;
-    text-decoration: line-through;
-}
-
-.big_current-price {
-    font-size: 2rem;
-    color: rgb(53, 221, 53);
-}
-
-.big_call-to-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    height: 100%;
-}
-
-.big_cart-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    border-radius: 3rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: rgb(53, 221, 53);
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-#big_cart-icon {
-    width: 3rem;
-    margin-right: 1rem;
-    color: whitesmoke;
 }
 
 /* STYLING OF THE SMALL OVERLAY CONTAINERS IN THE MAIN AND HORIZONTAL GAMING CONTENT  */

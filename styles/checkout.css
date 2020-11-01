@@ -23,16 +23,16 @@ a {
     /*background: red;*/
 }
 
-h1 {
+h2 {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
 }
 
-h2 {
+h3 {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 hr {
@@ -153,6 +153,7 @@ nav a:hover {
     min-height: 5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
@@ -325,7 +326,7 @@ span {
     }
 
     #header_logo {
-        width: 10rem;
+        width: 7rem;
     }
 
     header {
@@ -342,12 +343,23 @@ span {
         display: none;
     }
 
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+
     .checkout-container {
-        margin-top: 45%;
+        margin-top: 20rem;
+        width: 50rem;
     }
 
     .details-container {
-        width: 30rem;
+        width: 25rem;
     }
 
     .order-row {
@@ -355,11 +367,16 @@ span {
     }
 
     .summary-container {
-        width: 20rem;
+        width: 15rem;
     }
 
     .proceed-btn {
         min-width: 10rem;
         min-height: 6rem;
+        font-size: 1rem;
+    }
+
+    .order-title p {
+        font-size: 0.75rem;
     }
 }

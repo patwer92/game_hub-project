@@ -286,7 +286,7 @@ nav a:hover {
     }
 
     #header_logo {
-        width: 10rem;
+        width: 7rem;
     }
 
     header {
@@ -303,7 +303,25 @@ nav a:hover {
         display: none;
     }
 
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+
     .profile-container {
-        margin-top: 30rem;
+        margin-top: 20rem;
+    }
+
+    .text-container {
+        width: 40rem;
+    }
+
+    .row-container {
+        width: 40rem;
     }
 }

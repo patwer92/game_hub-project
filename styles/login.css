@@ -173,8 +173,8 @@ nav a:hover {
 
 .login-container {
     margin-top: 5%;
-    min-height: 30rem;
-    min-width: 25rem;
+    height: 30rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
 }
@@ -236,7 +236,7 @@ nav a:hover {
     }
 
     #header_logo {
-        width: 10rem;
+        width: 7rem;
     }
 
     header {
@@ -251,5 +251,73 @@ nav a:hover {
 
     .search form {
         display: none;
+    }
+
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+}
+
+/* HOME PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 700px) {
+    .home-page {
+        margin-top: 12rem;
+        background-size: 250%;
+        background-position: top;
+        min-height: 100vh;
+    }
+
+    .circle-container {
+        height: 40rem;
+        width: 40rem;
+    }
+
+    .circle-container img {
+        margin-top: 10rem;
+        width: 20rem;
+    }
+
+    .login-btn {
+        margin-top: 2rem;
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .login-container {
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+        height: 30rem;
+        width: 20rem;
+    }
+
+    .login-container p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .login-container a {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .user-input {
+        width: 100%;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        border: none;
+        margin-top: 1rem;
+    }
+
+    .forgot-pw {
+        margin-bottom: 2.5%;
     }
 }
