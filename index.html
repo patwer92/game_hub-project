@@ -22,8 +22,9 @@
                 <div class="nav_logo-mobile">
                     <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
                 </div>
-
-                <ul class="nav-links">
+               
+                
+                <ul class="nav-links1">
                     <div class="icon-box">
                         <a href="index.html"
                             ><img id="home-icon" src="/images/icons/home-icon.png" alt="Home icon"
@@ -31,37 +32,40 @@
                         <li><a href="index.html">Home</a></li>
                     </div>
                     <div class="icon-box">
-                        <a href="#"><img id="games-icon" src="/images/icons/games-icon.png" alt="Games icon" /></a>
-                        <li><a href="#">Games</a></li>
+                        <a href="#games"><img id="games-icon" src="/images/icons/games-icon.png" alt="Games icon" /></a>
+                        <li><a href="#games">Games</a></li>
                     </div>
                     <div class="icon-box">
-                        <a href="#"><img id="about-icon" src="/images/icons/about-icon.png" alt="About icon" /></a>
-                        <li><a href="#">About</a></li>
-                    </div>
+                        <a href="#about"><img id="about-icon" src="/images/icons/about-icon.png" alt="About icon" /></a>
+                        <li><a href="#about">About</a></li>
+                    </div>  
                 </ul>
+                </div>
             </nav>
 
             <div class="nav_logo-desktop">
                 <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
             </div>
+            <div class="search">
+                <form>
+                    <input type="text" name="search" id="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
 
-            <nav>
-                <ul class="nav-links">
-                    <div class="icon-box">
-                        <a href="#"><img id="search-icon" src="/images/icons/search-icon.png" alt="Search icon" /></a>
-                        <li><a href="#">Search</a></li>
-                    </div>
+            <nav> 
+                <ul class="nav-links2">
                     <div class="icon-box">
                         <a href="checkout.html"
                             ><img id="cart-icon" src="/images/icons/cart-icon.png" alt="Shopping Cart icon"
                         /></a>
-                        <li><a href="#">Cart</a></li>
+                        <li><a href="checkout.html">Cart</a></li>
                     </div>
                     <div class="icon-box">
-                        <a href="#"
+                        <a href="profile.html"
                             ><img id="profile-icon" src="/images/icons/profile-icon.png" alt="Profile icon"
                         /></a>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                     </div>
                 </ul>
             </nav>
@@ -81,7 +85,7 @@
                     </div>
                 </div>
             </section>
-            <section class="highlighted_games-section">
+            <a id="games"><section class="highlighted_games-section"></a>
             <div class="highlighted">
                 <div class="game-nav highlighted_nav-width">
                     <div class="previousgame">
@@ -674,7 +678,7 @@
                     <div class="horizontal_coming-box3">
                         <div class="small-overlay">
                             <div class="small-text">
-                                <a href="checkout.html">Necromunda:</a></p>
+                                <a href="checkout.html">Necromunda:</a>
                                 <a href="checkout.html">Underhive Wars</a>
                                 <p>Standard Edition</p>
                                 <p><strong>PC</strong></p>
@@ -1252,7 +1256,7 @@
                 </div>
             </section>
             <footer>
-                <div class="footer-container">
+                <a id="about"><div class="footer-container"></a>
                     <div class="footer-info">
                         <h4>About</h4>
                         <p>Careers</p>

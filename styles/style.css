@@ -78,12 +78,20 @@ header {
     z-index: 98;
 }
 
-.nav-links {
-    width: 40rem;
+.nav-links1,
+.nav-links2 {
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 1%;
+}
+
+.nav-links1 {
+    width: 50rem;
+}
+
+.nav-links2 {
+    width: 35rem;
 }
 
 nav a:hover {
@@ -92,6 +100,7 @@ nav a:hover {
 
 .nav_logo-desktop {
     margin-top: 1%;
+    margin-left: 12%;
 }
 
 .nav_logo-mobile {
@@ -116,9 +125,28 @@ nav a:hover {
 #search-icon,
 #cart-icon,
 #profile-icon {
-    margin-bottom: 0.5rem;
-
+    margin: 2rem;
     width: 2rem;
+}
+
+/* SEARCH BAR */
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 0.4rem 0.4rem;
+}
+
+#search {
+    width: 15rem;
+}
+
+.fa-search {
+    color: rgb(11, 99, 106);
 }
 
 /* HOME PAGE SECTION */
@@ -654,34 +682,8 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
-
-/*
-.row_cart-btn {
-    margin: 0 2rem;
-    width: 14rem;
-    height: 5rem;
-    padding: 1.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: rgb(53, 221, 53);
-    color: whitesmoke;
-}
-
-
-#row_cart-icon {
-    width: 2rem;
-    margin-right: 1rem;
-    color: whitesmoke;
-}
-*/
 
 /* FOOTER */
 
@@ -743,7 +745,7 @@ footer {
 
 /* HEADER RESPONSIVE MODE */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1300px) {
     .nav_logo-desktop {
         display: none;
     }
@@ -766,11 +768,15 @@ footer {
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
+
+    .search form {
+        display: none;
+    }
 }
 
 /* HOME PAGE RESPONSIVE MODE */
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 700px) {
     .home-page {
         margin-top: 12rem;
         background-size: 250%;

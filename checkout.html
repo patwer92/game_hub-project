@@ -4,11 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gamehub | Checkout Page</title>
-        <link rel="stylesheet" href="/checkout.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="/styles/checkout.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -19,11 +16,12 @@
     <body>
         <header>
             <nav>
-                <ul class="nav-links">
+                <div class="nav_logo-mobile">
+                    <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
+                </div>
+                <ul class="nav-links1">
                     <div class="icon-box">
-                        <a href="index.html"
-                            ><img id="home-icon" src="/images/icons/home-icon.png" alt="Home icon"
-                        /></a>
+                        <a href="index.html"><img id="home-icon" src="/images/icons/home-icon.png" alt="Home icon" /></a>
                         <li><a href="index.html">Home</a></li>
                     </div>
                     <div class="icon-box">
@@ -37,27 +35,29 @@
                 </ul>
             </nav>
 
-            <div class="nav_logo">
+            <div class="nav_logo-desktop">
                 <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" name="search" id="search" />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
 
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links2">
                     <div class="icon-box">
-                        <a href="#"><img id="search-icon" src="/images/icons/search-icon.png" alt="Search icon" /></a>
-                        <li><a href="#">Search</a></li>
-                    </div>
-                    <div class="icon-box">
-                        <a href="#"
+                        <a href="checkout.html"
                             ><img id="cart-icon" src="/images/icons/cart-icon.png" alt="Shopping Cart icon"
                         /></a>
                         <li><a href="checkout.html">Cart</a></li>
                     </div>
                     <div class="icon-box">
-                        <a href="#"
+                        <a href="profile.html"
                             ><img id="profile-icon" src="/images/icons/profile-icon.png" alt="Profile icon"
                         /></a>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                     </div>
                 </ul>
             </nav>

@@ -1,0 +1,309 @@
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(rgb(36, 170, 235), rgb(21, 91, 212));
+    font-family: "Poppins", sans-serif;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    color: whitesmoke;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    color: whitesmoke;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+/* HEADER */
+
+header {
+    top: 0px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
+    /*background: rgba(0, 0, 0, 0.9);*/
+    position: fixed;
+    z-index: 98;
+}
+
+.nav-links1,
+.nav-links2 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-links1 {
+    width: 50rem;
+}
+
+.nav-links2 {
+    width: 35rem;
+}
+
+nav a:hover {
+    color: rgb(28, 163, 247);
+}
+
+.nav_logo-desktop {
+    margin-top: 1%;
+    margin-left: 12%;
+}
+
+.nav_logo-mobile {
+    text-align: center;
+    display: none;
+}
+
+#header_logo {
+    width: 12rem;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-icon,
+#games-icon,
+#about-icon,
+#search-icon,
+#cart-icon,
+#profile-icon {
+    margin: 2rem;
+    width: 2rem;
+}
+
+/* SEARCH BAR */
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 0.4rem 0.4rem;
+}
+
+#search {
+    width: 15rem;
+}
+
+.fa-search {
+    color: rgb(11, 99, 106);
+}
+
+.fas {
+    font-size: 2rem;
+}
+
+/* PROFILE PAGE SECTION */
+
+.profile_page-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    margin-top: 5%;
+    width: 100rem;
+    height: 66rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    margin-top: 1%;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    border: 1px solid lightgreen;
+}
+
+.username {
+    margin-top: 1%;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0;
+}
+
+.text-container {
+    margin: 2.5% 0;
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.text-container span {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-container p {
+    color: white;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.library-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    /*background: #1a3983;*/
+    background: #1a2745;
+
+    width: 45rem;
+    height: 8rem;
+    margin: 1% 0;
+}
+
+.row-container img {
+    height: 100%;
+    width: 15rem;
+}
+
+.game-title {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    color: white;
+}
+
+.game-title h4 {
+    font-size: 1rem;
+    margin-bottom: 3%;
+}
+
+.pre-purchased {
+    margin-top: 5%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.btn {
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.download {
+    background-image: linear-gradient(rgb(21, 198, 212), rgb(11, 99, 106));
+}
+
+.sell {
+    background-image: linear-gradient(rgb(218, 2, 215), rgb(109, 1, 108));
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1300px) {
+    .nav_logo-desktop {
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        margin-top: 1%;
+        display: block;
+    }
+
+    #header_logo {
+        width: 10rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box li {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .search form {
+        display: none;
+    }
+
+    .profile-container {
+        margin-top: 30rem;
+    }
+}
