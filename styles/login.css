@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 body {
@@ -212,13 +212,16 @@ nav a:hover {
     text-transform: uppercase;
     color: whitesmoke;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .forgot-pw {
-    color: rgb(80, 80, 80);
+    color: #FFF;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 /* MEDIA QUERIES */

@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 body {
@@ -38,7 +38,7 @@ h2 {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 400;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     color: whitesmoke;
 }
 
@@ -160,6 +160,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .home-container {
@@ -948,6 +949,15 @@ footer {
     }
 }
 
+/* GLOBAL RESPONSIVE MODE */
+@media screen and (max-width: 1700px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+
+
 /* HOME PAGE RESPONSIVE MODE */
 
 @media screen and (max-width: 700px) {
@@ -1148,6 +1158,10 @@ footer {
         width: 35rem;
         height: 20rem;
     }
+    .recommended-text {
+        font-size: 2rem;
+
+    }
 }
 
 /* COMING GAMES RESPONSIVE MODE */
@@ -1168,15 +1182,11 @@ footer {
         width: 35rem;
         height: 20rem;
     }
-}
-
-
-
     .coming-text {
         font-size: 2rem;
     }
-
 }
+
 
 /* BESTSELLERS / TOP RANKED RESPONSIVE MODE */
 
@@ -1197,9 +1207,6 @@ footer {
         width: 90%;
 
     }
-    /* .contact {
-        margin-left: 20rem;
-    } */
 }
 
 @media screen and (max-width: 700px) {
