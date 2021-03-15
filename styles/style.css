@@ -56,7 +56,7 @@ h4 {
 }
 
 hr {
-    max-width: 90%;
+    max-width: 80%;
     margin-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
@@ -225,15 +225,15 @@ nav a:hover {
 }
 
 .highlighted {
+    margin-top: 5rem;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .highlighted-games {
-    width: 100%;
+    width: 80%;
     height: 50rem;
     display: flex;
     flex-direction: column;
@@ -353,7 +353,7 @@ nav a:hover {
 }
 
 .recommended-text {
-    margin: 0rem 0 2rem 5%;
+    margin: 0rem 0 2rem 10%;
 }
 
 /* MAIN FLEXBOX 'GAMES-CONTAINER' FOR RECOMMENDED & COMING GAMES SECTIONS */
@@ -419,8 +419,9 @@ nav a:hover {
 /* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX CONTAINER */
 
 .horizontal_flex-container {
-    height: 30rem;
-    width: 100%;
+    margin: 1.5rem auto;
+    height: 35rem;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -469,7 +470,7 @@ nav a:hover {
 }
 
 .coming-text {
-    margin: 5rem 0 2rem 5%;
+    margin: 5rem 0 2rem 10%;
 }
 
 .coming-box1,
@@ -557,7 +558,7 @@ nav a:hover {
 /* BESTSELLER / TOP RANKED GAMES SECTION */
 
 .top_ranked-section {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -587,7 +588,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 5% 0;
+    margin: 5% 0%;
 }
 
 .row-container {
@@ -693,18 +694,21 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .footer-container {
-    width: 90%;
+    width: 80%;
     color: whitesmoke;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .footer-info {
-    margin-top: 5rem;
+    text-align: center;
+    margin-top: 10%;
     font-size: 1.3rem;
 }
 
@@ -740,262 +744,6 @@ footer {
     text-align: center;
 }
 
-/* MEDIA QUERIES */
-
-/* HEADER RESPONSIVE MODE */
-
-@media screen and (max-width: 1300px) {
-    .nav_logo-desktop {
-        display: none;
-    }
-
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
-        display: none;
-    }
-
-    #home-icon,
-    #games-icon,
-    #about-icon,
-    #search-icon,
-    #cart-icon,
-    #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
-    }
-}
-
-/* HOME PAGE RESPONSIVE MODE */
-
-@media screen and (max-width: 700px) {
-    .home-page {
-        margin-top: 12rem;
-        background-size: 250%;
-        background-position: top;
-        min-height: 100vh;
-    }
-
-    .home-container {
-        margin-bottom: 30rem;
-        height: 40rem;
-        width: 40rem;
-    }
-
-    .home-container img {
-        margin-top: 5rem;
-        width: 20rem;
-    }
-
-    .home-container h1 {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        margin-bottom: 5%;
-    }
-
-    .button-container {
-        margin-top: 5rem;
-        width: 40rem;
-        height: 20rem;
-        align-items: flex-start;
-    }
-
-    .btn {
-        margin-top: 0;
-        width: 12rem;
-        height: 3.5rem;
-        font-size: 1rem;
-    }
-}
-
-/* HIGHLIGHTED SECTION RESPONSIVE MODE */
-
-@media screen and (max-width: 1300px) {
-    .highlighted-games {
-        background-size: cover;
-        background-position: right;
-        min-height: 50rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .highlighted {
-        margin-top: -10rem;
-    }
-
-    .highlighted-games {
-        background-position-x: -900px;
-    }
-
-    .overlay {
-        min-height: 10rem;
-        margin-top: -0rem;
-    }
-
-    .overlay-text {
-        margin: 0 5%;
-        height: 6rem;
-        width: 15rem;
-    }
-
-    .overlay-text h4 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .overlay-price {
-        height: 6rem;
-        width: 13rem;
-    }
-
-    .previous-price {
-        font-size: 1rem;
-    }
-
-    .current-price {
-        font-size: 1.3rem;
-    }
-
-    .discount {
-        height: 4rem;
-        width: 4rem;
-        padding: 0;
-    }
-
-    .discount p {
-        font-size: 1.2rem;
-    }
-
-    .overlay_call-to-action {
-        height: 6rem;
-    }
-
-    .overlay_cart-btn {
-        font-size: 1rem;
-        padding: 1rem 2rem;
-    }
-
-    #overlay_cart-icon {
-        width: 2rem;
-        margin-right: 0.5rem;
-    }
-}
-
-/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
-
-@media screen and (max-width: 1595px) {
-    .horizontal_rec-box1 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .horizontal_rec-box2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .horizontal_rec-box3 {
-        display: none;
-    }
-}
-
-/* COMING GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
-
-@media screen and (max-width: 1595px) {
-    .horizontal_coming-box1 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .horizontal_coming-box2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .horizontal_coming-box3 {
-        display: none;
-    }
-}
-
-/* MAIN GAMES CONTAINER RESPONSIVE MODE */
-
-@media screen and (max-width: 1260px) {
-    .games-container {
-        width: auto;
-    }
-}
-
-/* RECOMMENDED GAMES RESPONSIVE MODE */
-
-@media screen and (max-width: 810px) {
-    .rec-box1 {
-        width: 50rem;
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .rec-box1,
-    .rec-box2,
-    .rec-box3,
-    .rec-box4,
-    .rec-box5 {
-        width: 35rem;
-        height: 20rem;
-    }
-}
-
-/* COMING GAMES RESPONSIVE MODE */
-
-@media screen and (max-width: 810px) {
-    .coming-box1 {
-        width: 50rem;
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .coming-box1,
-    .coming-box2,
-    .coming-box3,
-    .coming-box4,
-    .coming-box5 {
-        width: 35rem;
-        height: 20rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer-info {
-    margin: 3.5rem 25%;
-    padding-left: 5rem;
-    text-align: center;
-        
-    }
-
-}
-
 /* -------------- GLOBAL STYLING CLASSES -------------- */
 
 /* NAVIGATION BUTTONS FOR IMAGES (LEFT / RIGHT) */
@@ -1006,7 +754,7 @@ footer {
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .previousgame,
@@ -1155,3 +903,323 @@ footer {
     margin-right: 0.5rem;
     color: whitesmoke;
 }
+
+
+/* MEDIA QUERIES */
+
+/* HEADER RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
+    .nav_logo-desktop {
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        margin-top: 1%;
+        display: block;
+    }
+
+    #header_logo {
+        width: 7rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box li {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .search form {
+        display: none;
+    }
+
+    #home-icon,
+    #games-icon,
+    #about-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+}
+
+/* HOME PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 700px) {
+    .home-page {
+        margin-top: 12rem;
+        background-size: 250%;
+        background-position: top;
+        min-height: 100vh;
+    }
+
+    .home-container {
+        margin-bottom: 30rem;
+        height: 40rem;
+        width: 40rem;
+    }
+
+    .home-container img {
+        margin-top: 5rem;
+        width: 20rem;
+    }
+
+    .home-container h1 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 5%;
+    }
+
+    .button-container {
+        margin-top: 5rem;
+        width: 40rem;
+        height: 20rem;
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-top: 0;
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* HIGHLIGHTED SECTION RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
+    .highlighted-games {
+        background-size: cover;
+        background-position: right;
+        min-height: 50rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .highlighted {
+        margin-top: -20%;
+    }
+
+    .highlighted-games {
+        background-position-x: -900px;
+        width: 100%;
+    }
+
+    .overlay {
+        min-height: 10rem;
+
+    }
+
+    .overlay-text {
+        margin: 0 5%;
+        height: 6rem;
+        width: 15rem;
+    }
+
+    .overlay-text h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .overlay-price {
+        height: 6rem;
+        width: 13rem;
+    }
+
+    .previous-price {
+        font-size: 1rem;
+    }
+
+    .current-price {
+        font-size: 1.3rem;
+    }
+
+    .discount {
+        height: 4rem;
+        width: 4rem;
+        padding: 0;
+    }
+
+    .discount p {
+        font-size: 1.2rem;
+    }
+
+    .overlay_call-to-action {
+        height: 6rem;
+    }
+
+    .overlay_cart-btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    #overlay_cart-icon {
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
+
+@media screen and (max-width: 1595px) {
+    .horizontal_rec-box1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .horizontal_rec-box2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .horizontal_rec-box3 {
+        display: none;
+    }
+}
+
+/* COMING GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
+
+@media screen and (max-width: 1595px) {
+    .horizontal_coming-box1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .horizontal_coming-box2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .horizontal_coming-box3 {
+        display: none;
+    }
+}
+
+/* HIGHLIGHTED GAMES | RECOMMENDED GAMES | COMING GAMES HORIZONTAL FLEX-BOX - RESPONSIVE MODE */
+
+@media screen and (max-width: 650px) {
+    .horizontal_flex-container {
+
+        width: 100%;
+
+    }
+
+    .game-nav {
+        width: 100%;
+    }
+
+
+}
+
+/* GAMES CONTAINER RESPONSIVE MODE */
+
+@media screen and (max-width: 1260px) {
+    .games-container {
+        width: auto;
+    }
+
+}
+
+/* RECOMMENDED GAMES RESPONSIVE MODE */
+
+@media screen and (max-width: 810px) {
+    .rec-box1 {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rec-box1,
+    .rec-box2,
+    .rec-box3,
+    .rec-box4,
+    .rec-box5 {
+        width: 35rem;
+        height: 20rem;
+    }
+}
+
+/* COMING GAMES RESPONSIVE MODE */
+
+@media screen and (max-width: 810px) {
+    .coming-box1 {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .coming-box1,
+    .coming-box2,
+    .coming-box3,
+    .coming-box4,
+    .coming-box5 {
+        width: 35rem;
+        height: 20rem;
+    }
+}
+
+
+
+    .coming-text {
+        font-size: 2rem;
+    }
+
+}
+
+/* BESTSELLERS / TOP RANKED RESPONSIVE MODE */
+
+@media screen and (max-width: 600px) {
+    .ranked-text {
+        margin: 5% 26%;
+    }
+
+    .best_top-container {
+        margin: 10% auto;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+
+    }
+    /* .contact {
+        margin-left: 20rem;
+    } */
+}
+
+@media screen and (max-width: 700px) {
+
+    .footer-container {
+        width: 100%;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+        
+    }
+
+    .contact {
+        margin-left: 30%;
+    }
+
+
+}
+
+
+   
