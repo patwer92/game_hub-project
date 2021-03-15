@@ -988,7 +988,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .footer-info {
-    margin: 3.5rem ;
+    margin: 3.5rem 25%;
     padding-left: 5rem;
     text-align: center;
         
