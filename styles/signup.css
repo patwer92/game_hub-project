@@ -209,12 +209,13 @@ nav a:hover {
 
 
 .have-acc {
-    color: rgb(22, 22, 22);
+    color: rgb(40, 40, 40);
     font-size: 1rem;
 }
 
 .login-here {
     /* padding-top: 1rem; */
+    text-decoration: underline;
     text-transform: capitalize;
     color: rgb(0, 0, 0);
     font-weight: 400;

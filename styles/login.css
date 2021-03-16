@@ -214,14 +214,15 @@ nav a:hover {
 }
 
 .forgot-pw {
-    color: rgb(22, 22, 22);
+    color: rgb(40, 40, 40);
     font-size: 1rem;
-    cursor: pointer;
+    margin-bottom: 2.5%;
 }
 
 .register {
     color: #000;
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
