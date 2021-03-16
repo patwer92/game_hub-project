@@ -432,7 +432,7 @@ nav a:hover {
 .horizontal_flex-container {
     margin: 1.5rem auto;
     height: 35rem;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -768,7 +768,7 @@ footer {
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
 }
 
 .previousgame,
@@ -1090,7 +1090,7 @@ footer {
 
 /* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
 
-@media screen and (max-width: 1595px) {
+@media screen and (max-width: 1795px) {
     .horizontal_rec-box1 {
         display: none;
     }
