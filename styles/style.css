@@ -100,10 +100,10 @@ nav a:hover {
 
 .nav_logo-desktop {
     margin: 1% 8% 1% 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -148,7 +148,7 @@ nav a:hover {
 
 #search {
     width: 20rem;
-    height: 2.35rem;
+    height: 2.4rem;
 }
 
 .fa-search {
@@ -157,6 +157,9 @@ nav a:hover {
     border: 1px solid whitesmoke;
 }
 
+.fas {
+    font-size: 2rem;
+}
 
 
 /* HOME PAGE SECTION */
