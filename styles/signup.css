@@ -153,13 +153,14 @@ nav a:hover {
 }
 
 .circle-container img {
-    margin-top: 3.2%;
+    margin-top: 10%;
     width: 40rem;
 }
 
 .signup-container {
-    min-height: 20rem;
-    min-width: 25rem;
+    /* margin-top: 1%; */
+    height: 30rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -172,6 +173,7 @@ nav a:hover {
 }
 
 .signup-container a {
+    margin-top: 5%;
     font-size: 1.5rem;
 }
 
@@ -184,7 +186,7 @@ nav a:hover {
 }
 
 .signup-btn {
-    margin-top: 1rem;
+    /* margin-top: 5%; */
     background-image: linear-gradient(rgb(233, 2, 222), rgb(117, 1, 111));
     width: 100%;
     height: 5rem;
@@ -197,15 +199,31 @@ nav a:hover {
     text-transform: uppercase;
     color: whitesmoke;
     cursor: pointer;
+    transition: ease-in 2s;
 }
 
+.signup-btn:hover {
+    background-image: linear-gradient(rgb(243, 94, 236), rgb(163, 23, 156));
+}
+
+
+
 .have-acc {
-    padding-top: 1rem;
-    color: rgb(80, 80, 80);
+    color: rgb(22, 22, 22);
     font-size: 1rem;
 }
 
+.login-here {
+    /* padding-top: 1rem; */
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    margin-bottom: 20%;
+}
+
 /* MEDIA QUERY */
+
+/* HEADER RESPONSIVE MODE */
 
 @media screen and (max-width: 1300px) {
     .nav_logo-desktop {
@@ -237,11 +255,71 @@ nav a:hover {
 
     #home-icon,
     #games-icon,
-    #about-icon,
+    #contact-icon,
     #search-icon,
     #cart-icon,
     #profile-icon {
         margin: 0.5rem;
         width: 1.5rem;
     }
+}
+
+/* HOME PAGE RESPONSIVE MODE */
+
+
+@media screen and (max-width: 700px) {
+    .home-page {
+        margin-top: 7rem;
+        background-size: 250%;
+        background-position: top;
+        min-height: 100vh;
+    }
+
+    .circle-container {
+        height: 35rem;
+        width: 35rem;
+        margin-bottom: 12rem;
+    }
+
+    .circle-container img {
+        margin-top: 10rem;
+        width: 16rem;
+
+    }
+
+    .signup-btn {
+        margin: 0; 
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .signup-container {
+        margin-top: 0;
+        margin-bottom: 10rem;
+        height: 30rem;
+        width: 25rem;
+    }
+
+    .signup-container p {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .signup-container a {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+
+    }
+
+    .user-input {
+        width: 100%;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        border: none;
+        margin-top: 0.5rem;
+    }
+
+
 }
