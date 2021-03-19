@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    /* font-size: 50%; */
 }
 
 body {
@@ -239,7 +240,7 @@ nav a:hover {
     width: 40rem;
 }
 
-.label-box {
+.input-box {
     margin: 5% 0;
     width: 40rem;
     height: 10rem;
@@ -256,12 +257,12 @@ label {
     color: rgb(211, 211, 211);
 }
 
-input {
+.input-form {
     padding: 0.5rem;
     font-size: 1.4rem;
     height: 4rem;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 2.5rem;
     border: none;
 }
 
