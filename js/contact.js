@@ -12,7 +12,7 @@ const subjectError = document.querySelector("#subjectError");
 
 
 
-function validateForm() {
+function validateContactForm() {
 
     event.preventDefault();
 
@@ -23,7 +23,7 @@ function validateForm() {
         return false;
     }
 
-    if(validateEmail(contactEmail.value) === true) {
+    if(validateContactEmail(contactEmail.value) === true) {
         contactEmailError.style.display = "none";
     } else {
         contactEmailError.style.display = "block";
@@ -43,7 +43,7 @@ function validateForm() {
 
 }
 
-contactForm.addEventListener("submit", validateForm);
+contactForm.addEventListener("submit", validateContactForm);
 
 function checkLength(value, len) {
     if (value.trim().length > len) {
@@ -53,7 +53,7 @@ function checkLength(value, len) {
     }
 }
 
-function validateEmail(contactEmail) {
+function validateContactEmail(contactEmail) {
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(contactEmail);
     return patternMatches;

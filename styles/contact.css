@@ -221,7 +221,8 @@ nav a:hover {
     font-weight: 600;
     /* text-transform: capitalize; */
     letter-spacing: 0.1rem;
-    color: whitesmoke;
+    /* color: whitesmoke; */
+    color: rgb(28, 163, 247);
 }
 
 .text-box {
@@ -321,6 +322,10 @@ footer {
     text-align: center;
     margin: 5%;
     font-size: 1.3rem;
+}
+
+.footer-info h4 {
+    margin-bottom: 20%;
 }
 
 .contact {
