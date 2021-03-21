@@ -190,7 +190,7 @@ nav a:hover {
 
 .order-info {
     min-width: 100%;
-    min-height: 5rem;
+    min-height: 4rem;
     display: flex;
     align-items: center;
     border-top-left-radius: 2rem;
