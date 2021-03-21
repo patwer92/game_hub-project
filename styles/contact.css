@@ -152,7 +152,7 @@ nav a:hover {
     border: 1px solid whitesmoke;
 }
 
-.fas {
+.search-icon {
     font-size: 2rem;
 }
 
@@ -172,7 +172,6 @@ nav a:hover {
     align-items: center;
     width: 80%;
     min-height: 70vh;
-    /* background: #1a2745; */
     border-radius: 2rem;
 }
 
@@ -220,11 +219,8 @@ nav a:hover {
     margin-top: 0%;
     font-size: 1.8rem;
     font-weight: 400;
-    /* text-transform: capitalize; */
     letter-spacing: 0.1rem;
     color: whitesmoke;
-    /* color: rgb(28, 163, 247); */
-    /* color: lightskyblue; */
 }
 
 .text-box {
@@ -233,8 +229,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     background: #1a2745;
-    /* background-color: rgb(28, 163, 247); */
-    /* background: #1d85e0; */
     border-radius: 2rem;
     height: 8rem;
     width: 40rem;
@@ -266,10 +260,10 @@ label {
     border: none;
 }
 
-.submit-btn {
+.btn {
     margin-bottom: 5%;
     width: 100%;
-    background: rgb(27, 182, 27);
+
     height: 5rem;
     border-radius: 5rem;
     border: none;
@@ -283,8 +277,20 @@ label {
     transition: ease-in-out 1s;
 }
 
-.submit-btn:hover {
-    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
+.contact-btn {
+    background: rgb(11, 120, 128);
+}
+
+.newsletter-btn {
+    background: rgb(155, 14, 148);
+}
+
+.contact-btn:hover {
+    background-image: linear-gradient(rgb(41, 207, 219), rgb(9, 153, 163));
+}
+
+.newsletter-btn:hover {
+    background-image: linear-gradient(rgb(233, 77, 225), rgb(194, 42, 186));
 }
 
 .form-error {
@@ -342,8 +348,8 @@ footer {
     margin-left: 1rem;
 }
 
-.far,
-.fas {
+.envelope-icon,
+.phone-icon {
     font-size: 2rem;
 }
 
@@ -361,4 +367,78 @@ footer {
     color: whitesmoke;
     font-size: 1rem;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+/* HEADER RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
+    .nav_logo-desktop {
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        margin-top: 1%;
+        display: block;
+    }
+
+    #header_logo {
+        width: 7rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box li {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .search form {
+        display: none;
+    }
+
+    #home-icon,
+    #games-icon,
+    #contact-icon,
+    #search-icon,
+    #cart-icon,
+    #profile-icon {
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+    }
+    .footer-info h4 {
+        margin-bottom: 10%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }

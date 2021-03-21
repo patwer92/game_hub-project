@@ -1,5 +1,3 @@
-/* GLOBAL STYLES */
-
 * {
     margin: 0;
     padding: 0;
@@ -21,33 +19,27 @@ a {
     list-style: none;
     text-transform: uppercase;
     color: whitesmoke;
+    text-align: center;
 }
 
 h1 {
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
     text-transform: uppercase;
-    letter-spacing: 0.4rem;
 }
 
 h2 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.4rem;
     color: whitesmoke;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
 }
 
-h3 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.5rem;
+hr {
+    width: 50rem;
+    margin: auto;
     color: whitesmoke;
-}
-
-h4 {
-    font-size: 2rem;
 }
 
 /* HEADER */
@@ -145,155 +137,125 @@ nav a:hover {
     font-size: 2rem;
 }
 
-/* PROFILE PAGE SECTION */
+/* PAYMENT SECTION */
 
-.profile_page-section {
-    min-height: 100vh;
+.payment-section {
+    min-height: 140vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-container {
-    margin: 10% 0;
-    min-width: 120rem;
+.payment-container {
+    margin: 20rem 0 5rem 0;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* background: red; */
+    justify-content: center;
 }
 
-.profile-img {
-    border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
-    object-fit: cover;
+.payment-header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
+}
+
+.billing-form-box {
+    margin: 10% 0;
+    width: 60rem;
+    height: 100%;
+    background: #1a3983;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.payment-box {
+    background: #1a2745;
+    width: 40%;
+    /* width: 70rem; */
+    height: auto;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    margin: 5% 0;
+    width: 50rem;
+    height: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+    color: rgb(211, 211, 211);
+}
+
+.input-form {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 100%;
+    border-radius: 2.5rem;
     border: none;
 }
 
-.username {
+.form-header {
+    margin: 7% 0;
+    text-align: center;
+}
+
+.form-error {
     margin-top: 1%;
-    font-size: 1.5rem;
-    color: black;
-    letter-spacing: 0;
-}
-
-.text-container {
-    margin: 5% 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
+    color: red;
     font-size: 1.2rem;
-    /* background: green; */
-}
-
-.text-container span,
-.text-container p {
-    font-size: 1.5rem;
-}
-
-.text-container span {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.text-container p {
-    color: white;
-    margin-left: 3%;
-    cursor: pointer;
-}
-
-.library-container {
-    padding: 1%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 2rem;
-    background: #1a3983;
-}
-
-.row-container {
-    display: flex;
-    flex-direction: row;
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-    background: #1a2745;
-    width: 90%;
-    height: 10rem;
-    margin: 1% 5%;
-}
-
-.row-container img {
-    height: 100%;
-    width: 23rem;
-}
-
-.game-title {
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 25%;
-    color: white;
-}
-
-.game-title h4 {
-    font-size: 1.5rem;
-    margin-bottom: 3%;
-}
-
-.header-library {
-    margin: 1% 5%;
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 80%;
-    /* background: green; */
+    display: none;
 }
 
 .btn {
-    margin: 0 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
+    margin: 5% 0;
+    width: 90%;
+    background: rgb(8, 168, 80);
     height: 5rem;
     border-radius: 5rem;
     border: none;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    transition: ease-in-out 1s;
 }
 
-.download-btn {
-    background: rgb(11, 120, 128);
+.btn:hover {
+    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
 }
 
-.sell-btn {
-    background: rgb(155, 14, 148);
-}
-
-.download-btn:hover {
-    background-image: linear-gradient(rgb(41, 207, 219), rgb(9, 153, 163));
-}
-
-.sell-btn:hover {
-    background-image: linear-gradient(rgb(233, 77, 225), rgb(194, 42, 186));
+.return-to-cart {
+    margin-bottom: 2%;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 /* FOOTER */
@@ -400,15 +362,30 @@ footer {
         width: 1.5rem;
     }
 
-    .profile-container {
+    .checkout-container {
         margin-top: 20rem;
+        width: 50rem;
     }
 
-    .text-container {
-        width: 40rem;
+    .details-container {
+        width: 25rem;
     }
 
-    .row-container {
-        width: 40rem;
+    .order-row {
+        height: 10rem;
+    }
+
+    .summary-container {
+        width: 15rem;
+    }
+
+    .proceed-btn {
+        min-width: 10rem;
+        min-height: 6rem;
+        font-size: 1rem;
+    }
+
+    .order-title p {
+        font-size: 0.75rem;
     }
 }

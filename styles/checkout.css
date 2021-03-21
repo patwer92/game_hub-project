@@ -25,19 +25,20 @@ a {
 
 h2 {
     color: whitesmoke;
-    font-size: 1.2rem;
-    letter-spacing: 0.25rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
 h3 {
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 hr {
     width: 80%;
     margin: auto;
+    color: whitesmoke;
 }
 
 /* HEADER */
@@ -50,7 +51,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
-    /*background: rgba(0, 0, 0, 0.9);*/
     position: fixed;
     z-index: 98;
 }
@@ -132,31 +132,33 @@ nav a:hover {
     border: 1px solid whitesmoke;
 }
 
-.fas {
+.search-icon {
     font-size: 2rem;
 }
 
 /* CHECKOUT PAGE SECTION */
 
 .checkout-section {
-    min-height: 100vh;
+    min-height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .checkout-container {
-    height: 55rem;
-    width: 120rem;
+    margin-top: 10%;
+    height: 130rem;
+    width: 70rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .order-details,
 .summary-details {
     min-width: 100%;
-    min-height: 5rem;
+    min-height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +176,7 @@ nav a:hover {
 
 .details-container {
     background: #1a2745;
-    width: 60rem;
+    width: 80rem;
     height: 100%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -237,20 +239,21 @@ nav a:hover {
     color: whitesmoke;
 }
 
-.far {
-    margin-top: 20%;
+.trash-icon {
+    margin-top: 35%;
     font-size: 2rem;
     cursor: pointer;
 }
 
-.far:hover {
+.trash-icon:hover {
     color: red;
 }
 
 /* ORDER SUMMARY BOX */
 
 .summary-container {
-    width: 30rem;
+    margin: 7.5% 0;
+    width: 80rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -259,16 +262,17 @@ nav a:hover {
 
 .summary {
     width: 100%;
-    height: 45rem;
+    height: 100%;
     background: #1a2745;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .summary-box1,
 .summary-box2 {
-    margin: auto;
+    margin-top: 5%;
     width: 90%;
     height: 30%;
     border-radius: 2rem;
@@ -283,8 +287,21 @@ nav a:hover {
 
 .summary-box1 p {
     color: whitesmoke;
-    font-size: 1rem;
-    margin: 1% 0 5% 10%;
+    font-size: 1.4rem;
+    margin: 1% 10% 5% 10%;
+}
+
+.items-info,
+.shipping-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items-info p {
+    margin-top: 7.5%;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 span {
@@ -296,7 +313,7 @@ span {
 }
 
 .summary-box2 h2 {
-    margin: 7.5% auto 7.5% auto;
+    margin: 4% auto 4% auto;
     color: white;
     font-size: 1.5rem;
 }
@@ -304,10 +321,10 @@ span {
 /* 'PROCEED TO CHECKOUT' BUTTON */
 
 .proceed-btn {
-    margin-top: 5%;
-    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
-    min-width: 30rem;
-    min-height: 6rem;
+    margin: 7% 0;
+    background: rgb(8, 168, 80);
+    width: 70rem;
+    height: 5rem;
     border-radius: 5rem;
     border: none;
     font-family: "Poppins", sans-serif;
@@ -317,6 +334,74 @@ span {
     text-transform: uppercase;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.proceed-btn:hover {
+    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
+}
+
+/* FOOTER */
+
+footer {
+    height: auto;
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    text-align: center;
+    margin: 5%;
+    font-size: 1.3rem;
+}
+
+.footer-info h4 {
+    margin-bottom: 20%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email,
+.telephone {
+    margin-left: 1rem;
+}
+
+.envelope-icon,
+.phone-icon {
+    font-size: 2rem;
+}
+
+.fab {
+    font-size: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: lightskyblue;
+}
+
+.copyright {
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* MEDIA QUERY */

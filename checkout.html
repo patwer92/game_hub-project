@@ -56,7 +56,7 @@
                 <div class="search">
                     <form>
                         <input type="text" name="search" id="search" />
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <button type="submit"><i class="fas fa-search search-icon"></i></button>
                     </form>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="order-price">
                                 <h3>20.37 USD</h3>
-                                <i class="far fa-trash-alt"></i>
+                                <i class="far fa-trash-alt trash-icon"></i>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="order-price">
                                 <h3>58.99 USD</h3>
-                                <i class="far fa-trash-alt"></i>
+                                <i class="far fa-trash-alt trash-icon"></i>
                             </div>
                         </div>
                     </div>
@@ -121,9 +121,12 @@
                             <h2>Order Summary</h2>
                         </div>
                         <div class="summary-box1">
-                            <h2>2 Items in Cart</h2>
+                            <div class="items-info">
+                                <h2>Items in Cart:</h2>
+                                <p>2</p>
+                            </div>
                             <hr />
-                            <div>
+                            <div class="shipping-info">
                                 <p>Shipping Method:</p>
                                 <p><span>Download Only</span></p>
                             </div>
@@ -133,13 +136,63 @@
                             <hr />
                             <h2>79.36 USD</h2>
                         </div>
+                        <a href="payment.html">
+                            <button class="proceed-btn">Proceed to Checkout</button>
+                        </a>
                     </div>
-                    <a href="success.html">
-                        <button class="proceed-btn">Proceed to Checkout</button>
-                    </a>
+                    
                 </div>
             </div>
         </section>
+        <footer>
+            <a id="about"><div class="footer-container"></a>
+                <div class="footer-info">
+                    <h4>About</h4>
+                    <p>Careers</p>
+                    <p>Terms & Conditions</p>
+                    <p>Refund Policy</p>
+                    <p>Cookie Policy</p>
+                    <p>Privacy Policy</p>
+                    <p>Help & Support</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Community</h4>
+                    <p>Forum</p>
+                    <p>Blog</p>
+                    <p>Newsroom</p>
+                    <p>Games Hub</p>
+                    <p>Free to Play</p>
+                    <p>Redeem a Gift</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Contact</h4>
+                    <p>4 N. Second Street</p>
+                    <p>Suite 800</p>
+                    <p>San Jose, CA 95113</p>
+                    <div class="contact">
+                        <i class="far fa-envelope envelope-icon"></i>
+                        <p class="email">contact@gamehub.com</p>
+                    </div>
+                    <div class="contact">
+                        <i class="fas fa-phone-square-alt phone-icon"></i>
+                        <p class="telephone">+1 (555) 555-1234</p>
+                    </div>
+                </div>
+
+                <div class="footer-info">
+                    <h4>FOLLOW US ON</h4>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2020 Game Hub - Werner, Patrick. All rights reserved.</p>
+                <p>Trademarks are property of their respective owners.</p>
+            </div>
+        </footer>
         <script src="js/script.js"></script>
     </body>
 </html>

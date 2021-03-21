@@ -122,11 +122,11 @@ nav a:hover {
     border: 1px solid whitesmoke;
 }
 
-.fas {
+.search-icon {
     font-size: 2rem;
 }
 
-/* LOGIN PAGE SECTION */
+/* SIGNUP PAGE SECTION */
 
 .home_page-section {
     min-height: 100vh;
@@ -149,7 +149,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: relative;
 }
 
 .circle-container img {
@@ -187,7 +187,7 @@ nav a:hover {
 
 .signup-btn {
     /* margin-top: 5%; */
-    background-image: linear-gradient(rgb(233, 2, 222), rgb(117, 1, 111));
+    background: rgb(155, 14, 148);
     width: 100%;
     height: 5rem;
     border-radius: 5rem;
@@ -203,10 +203,8 @@ nav a:hover {
 }
 
 .signup-btn:hover {
-    background-image: linear-gradient(rgb(243, 94, 236), rgb(163, 23, 156));
+    background-image: linear-gradient(rgb(233, 77, 225), rgb(194, 42, 186));
 }
-
-
 
 .have-acc {
     color: rgb(40, 40, 40);
@@ -220,6 +218,70 @@ nav a:hover {
     color: rgb(0, 0, 0);
     font-weight: 400;
     margin-bottom: 20%;
+}
+
+/* FOOTER */
+
+footer {
+    height: auto;
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    text-align: center;
+    margin: 5%;
+    font-size: 1.3rem;
+}
+
+.footer-info h4 {
+    margin-bottom: 20%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email,
+.telephone {
+    margin-left: 1rem;
+}
+
+.envelope-icon,
+.phone-icon {
+    font-size: 2rem;
+}
+
+.fab {
+    font-size: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: lightskyblue;
+}
+
+.copyright {
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* MEDIA QUERY */
@@ -267,7 +329,6 @@ nav a:hover {
 
 /* HOME PAGE RESPONSIVE MODE */
 
-
 @media screen and (max-width: 700px) {
     .home-page {
         margin-top: 7rem;
@@ -285,11 +346,10 @@ nav a:hover {
     .circle-container img {
         margin-top: 10rem;
         width: 16rem;
-
     }
 
     .signup-btn {
-        margin: 0; 
+        margin: 0;
         width: 20rem;
         height: 3.5rem;
         font-size: 1.2rem;
@@ -311,7 +371,6 @@ nav a:hover {
     .signup-container a {
         margin-top: 0.5rem;
         font-size: 1.5rem;
-
     }
 
     .user-input {
@@ -321,6 +380,4 @@ nav a:hover {
         border: none;
         margin-top: 0.5rem;
     }
-
-
 }
