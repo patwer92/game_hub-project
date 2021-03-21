@@ -147,7 +147,7 @@ nav a:hover {
 }
 
 .payment-container {
-    margin: 20rem 0 5rem 0;
+    margin: 10% 0 5% 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -169,8 +169,7 @@ nav a:hover {
 
 .payment-box {
     background: #1a2745;
-    width: 40%;
-    /* width: 70rem; */
+    width: 80rem;
     height: auto;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -181,8 +180,8 @@ nav a:hover {
 }
 
 .billing-form-box {
-    margin: 10% 0;
-    width: 60rem;
+    margin: 5% 0;
+    width: 70rem;
     height: 100%;
     background: #1a3983;
     padding: 1%;
