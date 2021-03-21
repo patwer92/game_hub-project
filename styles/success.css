@@ -341,51 +341,98 @@ footer {
 
 /* MEDIA QUERY */
 
+/* HEADER RESPONSIVE MODE */
+
 @media screen and (max-width: 1300px) {
     .nav_logo-desktop {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
     #home-icon,
     #games-icon,
-    #about-icon,
+    #contact-icon,
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
     }
+
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #header_logo {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* SUCCESS PAGE RESPONSIVE MODE */
 
     .success-text {
         margin-top: 40%;
     }
 
     .success-container {
-        margin-top: 5%;
+        margin-top: 15%;
         height: 60rem;
         width: 40rem;
+    }
+
+    .download-btn {
+        margin-bottom: 5%;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+    }
+
+    .footer-info h4 {
+        margin-bottom: 5%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }

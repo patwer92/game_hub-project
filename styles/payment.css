@@ -147,7 +147,7 @@ nav a:hover {
 }
 
 .payment-container {
-    margin: 10% 0 5% 0;
+    margin: 20rem 0 5% 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -323,68 +323,102 @@ footer {
 
 /* MEDIA QUERY */
 
+/* HEADER RESPONSIVE MODE */
+
 @media screen and (max-width: 1300px) {
     .nav_logo-desktop {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
     #home-icon,
     #games-icon,
-    #about-icon,
+    #contact-icon,
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
     }
 
-    .checkout-container {
-        margin-top: 20rem;
-        width: 50rem;
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .details-container {
-        width: 25rem;
+    .search {
+        display: none;
     }
 
-    .order-row {
-        height: 10rem;
+    #search {
+        display: none;
     }
 
-    .summary-container {
-        width: 15rem;
+    #header_logo {
+        margin-top: 1rem;
     }
 
-    .proceed-btn {
-        min-width: 10rem;
-        min-height: 6rem;
-        font-size: 1rem;
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* PAYMENT PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 900px) {
+    .payment-box {
+        width: 40rem;
     }
 
-    .order-title p {
-        font-size: 0.75rem;
+    .billing-form-box {
+        width: 35rem;
+    }
+
+    .input-box {
+        width: 30rem;
+    }
+
+    hr {
+        width: 30rem;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+    }
+
+    .footer-info h4 {
+        margin-bottom: 5%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }

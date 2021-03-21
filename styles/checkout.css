@@ -138,15 +138,15 @@ nav a:hover {
 
 /* CHECKOUT PAGE SECTION */
 
-.checkout-section {
+.cart-section {
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-.checkout-container {
-    margin-top: 10%;
+.cart-container {
+    margin: 20rem 0 5% 0;
     height: 100%;
     width: 100rem;
     display: flex;
@@ -405,68 +405,121 @@ footer {
 
 /* MEDIA QUERY */
 
+/* HEADER RESPONSIVE MODE */
+
 @media screen and (max-width: 1300px) {
     .nav_logo-desktop {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
     #home-icon,
     #games-icon,
-    #about-icon,
+    #contact-icon,
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
     }
 
-    .checkout-container {
-        margin-top: 20rem;
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #header_logo {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* CART INFO PAGE - RESPONSIVE MODE */
+
+@media screen and (max-width: 900px) {
+    .cart-container {
         width: 50rem;
     }
 
     .details-container {
-        width: 25rem;
+        width: 40rem;
     }
 
     .order-row {
-        height: 10rem;
+        height: 15rem;
+    }
+
+    .order-title p {
+        margin-top: 40%;
     }
 
     .summary-container {
-        width: 15rem;
+        width: 40rem;
+    }
+
+    .summary-box1,
+    .summary-box2 {
+        margin: 10% 0 5% 0;
     }
 
     .proceed-btn {
-        min-width: 10rem;
-        min-height: 6rem;
-        font-size: 1rem;
+        margin: 4rem 0;
+        width: 35rem;
+        height: 5rem;
     }
 
     .order-title p {
         font-size: 0.75rem;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+    }
+
+    .footer-info h4 {
+        margin-bottom: 5%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -73,7 +73,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
-    /*background: rgba(0, 0, 0, 0.9);*/
     position: fixed;
     z-index: 98;
 }
@@ -146,7 +145,7 @@ nav a:hover {
 
 #search {
     width: 20rem;
-    height: 2.4rem;
+    height: 2.6rem;
 }
 
 .fa-search {
@@ -945,26 +944,7 @@ footer {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
@@ -974,17 +954,36 @@ footer {
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #header_logo {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
-
-/* GLOBAL RESPONSIVE MODE */
-/* @media screen and (max-width: 1700px) {
-    html {
-        font-size: 62.5%;
-    }
-} */
 
 /* HOME PAGE RESPONSIVE MODE */
 

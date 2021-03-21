@@ -171,7 +171,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-height: 70vh;
+    height: auto;
     border-radius: 2rem;
 }
 
@@ -371,26 +371,7 @@ footer {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
@@ -400,8 +381,75 @@ footer {
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
+    }
+
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #header_logo {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* CONTACT PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
+    .contact-section {
+        min-height: auto;
+    }
+
+    .main-container {
+        margin: 10rem 0;
+        flex-direction: column;
+    }
+
+    .or-box {
+        margin: 4rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-content h2,
+    .newsletter-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .input-box {
+        width: 30rem;
+    }
+
+    .contact-content,
+    .newsletter-content {
+        height: 90%;
+    }
+
+    .text-box {
+        width: 25rem;
+    }
+
+    .text-box p {
+        font-size: 1.2rem;
     }
 }
 
@@ -424,8 +472,9 @@ footer {
         padding: 1rem;
         margin: 3.5rem;
     }
+
     .footer-info h4 {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .contact {

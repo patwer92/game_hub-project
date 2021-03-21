@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Gamehub Hub | Checkout</title>
+        <meta
+            name="description"
+            content="Welcome to Game Hub - where you'll find all the games you need in one place. On the 'checkout page', you can easily make a purchase with our checkout validation form. We accept most payment methods, including debit and/or credit cards."
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gamehub | Checkout Page</title>
-        <link rel="stylesheet" href="/styles/payment.css" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
@@ -13,6 +16,8 @@
             crossorigin="anonymous"
         />
         <link rel="icon" href="data:;base64,=" />
+        <link rel="stylesheet" href="./styles/payment.css" />
+        <link rel="stylesheet" href="./styles/menu.css" />
         <script>
             (function (h, o, t, j, a, r) {
                 h.hj =
@@ -31,10 +36,35 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="nav_logo-mobile">
-                    <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
+            <div class="nav_logo-mobile">
+                <a href="index.html"><img id="header_logo" src="/images/gamehub-logo.png" alt="Gamehub Logo" /></a>
+                <div class="search">
+                    <form>
+                        <input type="text" name="search" id="search">
+                        <button type="submit"><i class="fas fa-search search-icon"></i></button>
+                    </form>
                 </div>
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#games">Games</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="checkout.html">Cart</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
                 <ul class="nav-links1">
                     <div class="icon-box">
                         <a href="index.html"><img id="home-icon" src="/images/icons/home-icon.png" alt="Home icon" /></a>

@@ -155,14 +155,13 @@ nav a:hover {
 }
 
 .profile-container {
-    margin: 10% 0;
+    margin: 20rem 0;
     min-width: 120rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: red; */
 }
 
 .profile-img {
@@ -188,8 +187,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    /* background: green; */
+    font-size: 1.5rem;
 }
 
 .text-container span,
@@ -217,6 +215,10 @@ nav a:hover {
     flex-direction: column;
     border-radius: 2rem;
     background: #1a3983;
+}
+
+.header-library {
+    margin: 1% 5%;
 }
 
 .row-container {
@@ -247,10 +249,6 @@ nav a:hover {
 .game-title h4 {
     font-size: 1.5rem;
     margin-bottom: 3%;
-}
-
-.header-library {
-    margin: 1% 5%;
 }
 
 .button-container {
@@ -362,53 +360,165 @@ footer {
 
 /* MEDIA QUERY */
 
+/* HEADER RESPONSIVE MODE */
+
 @media screen and (max-width: 1300px) {
     .nav_logo-desktop {
         display: none;
     }
 
-    .nav_logo-mobile {
-        margin-top: 1%;
-        display: block;
-    }
-
-    #header_logo {
-        width: 7rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .icon-box li {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .search form {
         display: none;
     }
 
     #home-icon,
     #games-icon,
-    #about-icon,
+    #contact-icon,
     #search-icon,
     #cart-icon,
     #profile-icon {
-        margin: 0.5rem;
-        width: 1.5rem;
+        display: none;
     }
 
-    .profile-container {
-        margin-top: 20rem;
+    .nav_logo-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
+    .search {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #header_logo {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* PROFILE PAGE RESPONSIVE MODE */
+
+@media screen and (max-width: 1300px) {
     .text-container {
+        width: 75rem;
+    }
+
+    .library-container {
+        width: 75rem;
+    }
+
+    .header-library {
+        margin: 5% 0%;
+    }
+
+    .row-container {
+        width: 70rem;
+        margin: 1rem 0;
+    }
+
+    .row-container img {
+        width: 12rem;
+    }
+
+    .game-title {
+        width: 20rem;
+    }
+
+    .game-title h4 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-container {
+        width: 38rem;
+    }
+
+    .text-container span,
+    .text-container p {
+        font-size: 1.2rem;
+    }
+
+    .library-container {
         width: 40rem;
     }
 
     .row-container {
-        width: 40rem;
+        width: 36rem;
+    }
+
+    .row-container img {
+        width: 12rem;
+    }
+
+    .game-title {
+        width: 20rem;
+    }
+
+    .game-title h4 {
+        font-size: 1.2rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .download-btn {
+        margin-bottom: 5%;
+    }
+
+    .sell-btn {
+        margin-top: 5%;
+    }
+}
+
+/* FOOTER RESPONSIVE MODE */
+
+@media screen and (max-width: 1400px) {
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .footer-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 3.5rem;
+    }
+
+    .footer-info h4 {
+        margin-bottom: 5%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
