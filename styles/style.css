@@ -354,9 +354,13 @@ nav a:hover {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: rgb(53, 221, 53);
+    background: rgb(8, 168, 80);
     color: whitesmoke;
     cursor: pointer;
+}
+
+.overlay_cart-btn:hover {
+    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
 }
 
 #overlay_cart-icon {
@@ -914,9 +918,13 @@ footer {
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: rgb(53, 221, 53);
+    background: rgb(8, 168, 80);
     color: whitesmoke;
     cursor: pointer;
+}
+
+.small_cart-btn:hover {
+    background-image: linear-gradient(rgb(21, 212, 46), rgb(41, 194, 110));
 }
 
 #small_cart-icon {
