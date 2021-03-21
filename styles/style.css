@@ -317,6 +317,7 @@ nav a:hover {
 .current-price {
     font-size: 2.5rem;
     color: rgb(53, 221, 53);
+    font-weight: 600;
 }
 
 .discount {
@@ -693,6 +694,7 @@ nav a:hover {
 .row_current-price {
     color: rgb(29, 219, 29);
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .row-discount {
@@ -896,6 +898,7 @@ footer {
 .small_current-price {
     font-size: 1.5rem;
     color: rgb(53, 221, 53);
+    font-weight: 600;
 }
 
 .small_call-to-action {
