@@ -146,12 +146,13 @@ nav a:hover {
 }
 
 .cart-container {
-    margin: 20rem 0 5% 0;
+    margin-top: 13%;
     height: 100%;
-    width: 100rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .order-details,
@@ -163,7 +164,8 @@ nav a:hover {
     justify-content: center;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
+    /* background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107)); */
+    background: #1a3983;
 }
 
 .summary-details h1,
@@ -174,9 +176,9 @@ nav a:hover {
 /* ORDER DETAILS BOX */
 
 .details-container {
-    background: #1a2745;
-    width: 80rem;
-    height: 100%;
+    background: #092843;
+    width: 60rem;
+    height: 60rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-radius: 2rem;
@@ -251,9 +253,8 @@ nav a:hover {
 /* ORDER SUMMARY BOX */
 
 .summary-container {
-    margin: 7.5% 0;
-    width: 80rem;
-    height: 100%;
+    width: 60rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,7 +263,7 @@ nav a:hover {
 .summary {
     width: 100%;
     height: 100%;
-    background: #1a2745;
+    background: #092843;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -312,7 +313,7 @@ span {
 }
 
 .summary-box2 h2 {
-    margin: 4% auto 4% auto;
+    margin: 6% auto 6% auto;
     color: white;
     font-size: 1.5rem;
 }
@@ -320,9 +321,9 @@ span {
 /* 'PROCEED TO CHECKOUT' BUTTON */
 
 .proceed-btn {
-    margin: 5% 0;
+    margin-top: 10%;
     background: rgb(8, 168, 80);
-    width: 70rem;
+    width: 54rem;
     height: 5rem;
     border-radius: 5rem;
     border: none;
@@ -455,13 +456,27 @@ footer {
 
 /* CART INFO PAGE - RESPONSIVE MODE */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
+
     .cart-container {
+        margin-top: 20%;
+        flex-direction: column;
+    }
+
+    .summary-container {
+        margin: 5% 0;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .cart-container {
+        margin: 38% 0 10% 0;
         width: 50rem;
     }
 
     .details-container {
-        width: 40rem;
+        width: 35rem;
     }
 
     .order-row {
@@ -469,21 +484,55 @@ footer {
     }
 
     .order-title p {
-        margin-top: 40%;
+        margin-top: 30%;
+    }
+
+    .order-title h3 {
+        font-size: 1.2rem;
+    }
+
+    .order-price {
+        margin-right: 0;
+    }
+
+    .order-price h3 {
+        font-size: 1.2rem;
+    }
+
+    .order-game img {
+        width: 15rem;
+    }
+
+    .trash-icon {
+        margin-right: 20%;
     }
 
     .summary-container {
-        width: 40rem;
+        width: 35rem;
     }
 
     .summary-box1,
     .summary-box2 {
-        margin: 10% 0 5% 0;
+        margin: 5% 0 5% 0;
+    }
+
+    .summary-box2 h2 {
+        margin: 10% auto 10% auto;
+    }
+
+    .shipping-info {
+        height: 10rem;
+        align-items: center;
+    }
+
+    .shipping-info span {
+        font-size: 1rem;
+        margin-bottom: 5%;
     }
 
     .proceed-btn {
         margin: 4rem 0;
-        width: 35rem;
+        width: 31rem;
         height: 5rem;
     }
 

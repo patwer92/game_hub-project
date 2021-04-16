@@ -6,13 +6,13 @@ const contactNameError = document.querySelector("#contactNameError");
 const contactEmail = document.querySelector("#contactEmail");
 const contactEmailError = document.querySelector("#contactEmailError");
 
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
 
 
 
 
-function validateContactForm() {
+function validateContactForm(event) {
 
     event.preventDefault();
 
@@ -30,14 +30,14 @@ function validateContactForm() {
         return false;
     }
 
-    if (checkLength(subject.value, 9) === true) {
-        subjectError.style.display = "none";
+    if (checkLength(message.value, 9) === true) {
+        messageError.style.display = "none";
     } else {
-        subjectError.style.display = "block";
+        messageError.style.display = "block";
         return false;
     }
 
-    alert("Your request has been successfully sent.");
+    alert("Your message has been successfully sent.");
     return true;
     
 

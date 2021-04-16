@@ -156,7 +156,7 @@ nav a:hover {
 
 .profile-container {
     margin: 20rem 0;
-    min-width: 120rem;
+    width: 100rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -174,13 +174,13 @@ nav a:hover {
 
 .username {
     margin-top: 1%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     letter-spacing: 0;
 }
 
 .text-container {
-    margin: 5% 0;
+    margin: 7% 0 2% 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -193,6 +193,7 @@ nav a:hover {
 .text-container span,
 .text-container p {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .text-container span {
@@ -218,7 +219,7 @@ nav a:hover {
 }
 
 .header-library {
-    margin: 1% 5%;
+    margin: 5% 5% 1% 5%;
 }
 
 .row-container {
@@ -229,12 +230,12 @@ nav a:hover {
     background: #1a2745;
     width: 90%;
     height: 10rem;
-    margin: 1% 5%;
+    margin: 1% 5% 5% 5%;
 }
 
 .row-container img {
-    height: 100%;
-    width: 23rem;
+    height: auto;
+    width: 18rem;
 }
 
 .game-title {
@@ -253,10 +254,9 @@ nav a:hover {
 
 .button-container {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
     width: 80%;
-    /* background: green; */
 }
 
 .btn {
@@ -410,34 +410,16 @@ footer {
 
 /* PROFILE PAGE RESPONSIVE MODE */
 
-@media screen and (max-width: 1300px) {
-    .text-container {
-        width: 75rem;
-    }
 
-    .library-container {
-        width: 75rem;
-    }
 
-    .header-library {
-        margin: 5% 0%;
-    }
+@media screen and (max-width: 1050px) {
 
-    .row-container {
+    .profile-container {
         width: 70rem;
-        margin: 1rem 0;
     }
 
-    .row-container img {
-        width: 12rem;
-    }
-
-    .game-title {
-        width: 20rem;
-    }
-
-    .game-title h4 {
-        font-size: 1.2rem;
+    .text-container {
+        margin: 10% 0 3% 0;
     }
 
     .btn {
@@ -445,49 +427,80 @@ footer {
         width: 10rem;
         font-size: 1rem;
     }
-}
 
-@media screen and (max-width: 800px) {
-    .text-container {
-        width: 38rem;
-    }
-
-    .text-container span,
-    .text-container p {
-        font-size: 1.2rem;
-    }
-
-    .library-container {
-        width: 40rem;
-    }
-
-    .row-container {
-        width: 36rem;
-    }
-
-    .row-container img {
-        width: 12rem;
-    }
-
-    .game-title {
-        width: 20rem;
+    .username {
+        margin-top: 1.5%;
     }
 
     .game-title h4 {
         font-size: 1.2rem;
     }
+}
+
+@media screen and (max-width: 750px) {
+
+    .profile-container {
+         width: 35rem;
+    }
+
+    .username {
+        margin-top: 3%;
+    }
+
+    .text-container {
+        margin: 20.5% 0 5.5% 0;
+        width: 35rem;
+    }
+
+    .text-container span,
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .header-library {
+        margin-top: 10%;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .row-container {
+        margin: 1% 5% 10% 5%;
+        width: 32rem;
+        height: 9rem;
+    }
+
+    .row-container img {
+        width: 13rem;
+
+    }
+
+    .game-title {
+        width: 15rem;
+    }
+
+    .game-title h4 {
+        font-size: 1rem;
+    }
+
+    .game-title p {
+        margin-top: 7%;
+        font-size: 0.8rem;
+    }
 
     .button-container {
+        width: 70%;
         flex-direction: column;
         justify-content: center;
     }
 
-    .download-btn {
-        margin-bottom: 5%;
+    .btn {
+        height: 2rem;
+        width: 8rem;
     }
 
-    .sell-btn {
-        margin-top: 5%;
+
+    .download-btn {
+        margin-bottom: 8%;
     }
 }
 

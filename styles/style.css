@@ -51,12 +51,18 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+h5 {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 hr {
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
@@ -248,24 +254,30 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .highlighted-games {
+    margin-top: 10%;
     width: 90%;
     height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url(/images/highlighted-games.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background: #092843;
+}
+
+.highlighted-games img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* STYLING OF THE OVERLAY CONTAINER */
 
 .overlay {
     min-height: 10rem;
-    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -283,8 +295,7 @@ nav a:hover {
 .overlay-text h4 {
     font-size: 2.5rem;
     color: whitesmoke;
-    margin-bottom: 3rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .overlay-text p {
@@ -376,7 +387,7 @@ nav a:hover {
 }
 
 .recommended-text {
-    margin: 0rem 0 2rem 10%;
+    margin: 5% 0 1% 5%;
 }
 
 /* MAIN FLEXBOX 'GAMES-CONTAINER' FOR RECOMMENDED & COMING GAMES SECTIONS */
@@ -387,56 +398,26 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     min-height: auto;
-    width: 120rem;
+    width: 180rem;
     flex-wrap: wrap;
 }
 
-.rec-box1,
-.rec-box2,
-.rec-box3,
-.rec-box4,
-.rec-box5 {
+.games-container img {
+    width: 40rem;
+    height: 22rem;
+
+}
+
+.rec-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.rec-box1 {
-    background-image: url(/images/recommended_games/fallguys.jpg);
-    width: 102.5rem;
-    height: 40rem;
-    margin: 1%;
-}
-
-.rec-box2 {
-    background-image: url(/images/recommended_games/outerworlds.jpg);
-    width: 50rem;
+    width: 40rem;
     height: 30rem;
-    margin: 1%;
-}
-
-.rec-box3 {
-    background-image: url(/images/recommended_games/AC_Odyssey.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
-}
-
-.rec-box4 {
-    background-image: url(/images/recommended_games/borderlands3.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
-}
-
-.rec-box5 {
-    background-image: url(/images/recommended_games/NBA.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
+    margin: 2%; 
+    background: #092843;
 }
 
 /* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX CONTAINER */
@@ -448,16 +429,13 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: red;
     justify-content: center;
 }
 
 .horizontal_rec-box1,
 .horizontal_rec-box2,
 .horizontal_rec-box3,
-.horizontal_rec-box4,
-.horizontal_rec-box5,
-.horizontal_rec-box6 {
+.horizontal_rec-box4 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -466,25 +444,15 @@ nav a:hover {
     height: 100%;
 }
 
-.horizontal_rec-box1 {
-    background-image: url(/images/recommended_games/fifa21.jpg);
-    background-position: center;
+.horizontal_rec-box1 img,
+.horizontal_rec-box2 img,
+.horizontal_rec-box3 img,
+.horizontal_rec-box4 img {
+    object-fit: cover;
+    width: 100%;
+    height: 25rem;
 }
 
-.horizontal_rec-box2 {
-    background-image: url(/images/recommended_games/avengers.jpg);
-    background-position: left;
-}
-
-.horizontal_rec-box3 {
-    background-image: url(/images/recommended_games/necromunda.jpg);
-    background-position: center;
-}
-
-.horizontal_rec-box4 {
-    background-image: url(/images/recommended_games/projectcars3.jpg);
-    background-position: center;
-}
 
 /* COMING GAMES SECTION */
 
@@ -496,53 +464,19 @@ nav a:hover {
     margin: 5rem 0 2rem 10%;
 }
 
-.coming-box1,
-.coming-box2,
-.coming-box3,
-.coming-box4,
-.coming-box5 {
+.coming-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.coming-box1 {
-    background-image: url(/images/recommended_games/fallguys.jpg);
-    width: 102.5rem;
-    height: 40rem;
-    margin: 1%;
-}
-
-.coming-box2 {
-    background-image: url(/images/recommended_games/outerworlds.jpg);
-    width: 50rem;
+    width: 40rem;
     height: 30rem;
-    margin: 1%;
+    margin: 2%;
 }
 
-.coming-box3 {
-    background-image: url(/images/recommended_games/AC_Odyssey.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
-}
 
-.coming-box4 {
-    background-image: url(/images/recommended_games/borderlands3.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
-}
-
-.coming-box5 {
-    background-image: url(/images/recommended_games/NBA.jpg);
-    width: 50rem;
-    height: 30rem;
-    margin: 1%;
-}
 
 /* COMING GAMES | HORIZONTAL FLEX-CONTAINER */
 
@@ -655,7 +589,8 @@ nav a:hover {
 }
 
 .row_info-box {
-    background: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30));
+    /* background: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30)); */
+    background: #092843;
     width: 100%;
     height: 100%;
     display: flex;
@@ -737,6 +672,12 @@ footer {
     font-size: 1.3rem;
 }
 
+.footer-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
 .contact {
     display: flex;
     flex-direction: row;
@@ -772,21 +713,29 @@ footer {
 
 /* -------------- GLOBAL STYLING CLASSES -------------- */
 
+/* ERROR HANDLING */
+
+.error {
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
 /* NAVIGATION BUTTONS FOR IMAGES (LEFT / RIGHT) */
 
 .game-nav {
-    height: 10rem;
+    height: 5rem;
     display: flex;
-    position: absolute;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 90%;
+    position: absolute;
 }
 
 .previousgame,
 .nextgame {
     width: 5rem;
-    height: 5rem;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
@@ -795,6 +744,10 @@ footer {
     font-weight: 300;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.nextgame {
+    right: 0;
 }
 
 .previousgame:hover,
@@ -828,7 +781,6 @@ footer {
 .small-overlay {
     height: 8rem;
     min-width: 100%;
-    background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -912,6 +864,7 @@ footer {
     width: 100%;
     height: 4rem;
     padding: 1.5rem;
+    margin-right: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -930,6 +883,7 @@ footer {
 }
 
 #small_cart-icon {
+    height: 2rem;
     width: 2rem;
     margin-right: 0.5rem;
     color: whitesmoke;

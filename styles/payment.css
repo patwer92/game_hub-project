@@ -164,12 +164,13 @@ nav a:hover {
     justify-content: center;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107));
+    /* background-image: linear-gradient(rgb(22, 97, 214), rgb(11, 39, 107)); */
+    background: #1a3983;
 }
 
 .payment-box {
-    background: #1a2745;
-    width: 80rem;
+    background: #092843;
+    width: 100rem;
     height: auto;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -181,7 +182,7 @@ nav a:hover {
 
 .billing-form-box {
     margin: 5% 0;
-    width: 70rem;
+    width: 80rem;
     height: 100%;
     background: #1a3983;
     padding: 1%;
@@ -192,7 +193,6 @@ nav a:hover {
 }
 
 .input-box {
-    margin: 5% 0;
     width: 50rem;
     height: 10rem;
     border-radius: 1rem;
@@ -218,7 +218,7 @@ label {
 }
 
 .form-header {
-    margin: 7% 0;
+    margin: 3% 0;
     text-align: center;
 }
 
