@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -133,8 +134,18 @@ nav a:hover {
 #search-icon,
 #cart-icon,
 #profile-icon {
-    margin: 2rem;
-    width: 2rem;
+    margin: 2.5rem;
+    width: 2.5rem;
+    transition: 0.1s ease-in-out;
+}
+
+#home-icon:hover,
+#games-icon:hover,
+#contact-icon:hover,
+#search-icon:hover,
+#cart-icon:hover,
+#profile-icon:hover {
+    transform: scale(1.5);
 }
 
 /* SEARCH BAR */
@@ -158,6 +169,10 @@ nav a:hover {
     color: #1b203d;
     background: whitesmoke;
     border: 1px solid whitesmoke;
+}
+
+.fa-search:hover {
+    color: rgb(28, 163, 247);
 }
 
 .search-icon {
@@ -245,11 +260,11 @@ nav a:hover {
 /* HIGHLIGHTED GAMES SECTION */
 
 .highlighted_games-section {
+    margin-top: 5%;
     min-height: 48.7vh;
 }
 
 .highlighted {
-    margin-top: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -258,7 +273,6 @@ nav a:hover {
 }
 
 .highlighted-games {
-    margin-top: 10%;
     width: 90%;
     height: 50rem;
     display: flex;
@@ -271,6 +285,7 @@ nav a:hover {
 
 .highlighted-games img {
     width: 100%;
+    height: 40rem;
     object-fit: cover;
 }
 
@@ -376,21 +391,20 @@ nav a:hover {
 
 #overlay_cart-icon {
     width: 3rem;
+    height: 3rem;
     margin-right: 1rem;
     color: whitesmoke;
 }
 
-/* RECOMMENDED GAMES SECTION */
+/* GAMES SECTION */
 
-.recommended_games-section {
+.games-section {
     min-height: 100vh;
 }
 
-.recommended-text {
+.games-text {
     margin: 5% 0 1% 5%;
 }
-
-/* MAIN FLEXBOX 'GAMES-CONTAINER' FOR RECOMMENDED & COMING GAMES SECTIONS */
 
 .games-container {
     margin: auto;
@@ -405,7 +419,6 @@ nav a:hover {
 .games-container img {
     width: 40rem;
     height: 22rem;
-
 }
 
 .rec-box {
@@ -416,13 +429,13 @@ nav a:hover {
     background-repeat: no-repeat;
     width: 40rem;
     height: 30rem;
-    margin: 2%; 
+    margin: 2%;
     background: #092843;
 }
 
-/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX CONTAINER */
+/* GAMES | HORIZONTAL FLEX-BOX CONTAINER */
 
-.horizontal_flex-container {
+/* .horizontal_flex-container {
     margin: 1.5rem auto;
     height: 35rem;
     width: 90%;
@@ -451,66 +464,7 @@ nav a:hover {
     object-fit: cover;
     width: 100%;
     height: 25rem;
-}
-
-
-/* COMING GAMES SECTION */
-
-.coming_games-section {
-    min-height: 100vh;
-}
-
-.coming-text {
-    margin: 5rem 0 2rem 10%;
-}
-
-.coming-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40rem;
-    height: 30rem;
-    margin: 2%;
-}
-
-
-
-/* COMING GAMES | HORIZONTAL FLEX-CONTAINER */
-
-.horizontal_coming-box1,
-.horizontal_coming-box2,
-.horizontal_coming-box3,
-.horizontal_coming-box4,
-.horizontal_coming-box5,
-.horizontal_coming-box6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-}
-
-.horizontal_coming-box1 {
-    background-image: url(/images/recommended_games/fifa21.jpg);
-}
-
-.horizontal_coming-box2 {
-    background-image: url(/images/recommended_games/avengers.jpg);
-}
-
-.horizontal_coming-box3 {
-    background-image: url(/images/recommended_games/necromunda.jpg);
-}
-
-.horizontal_coming-box4 {
-    background-image: url(/images/recommended_games/projectcars3.jpg);
-}
+} */
 
 /* BESTSELLER / TOP RANKED GAMES SECTION */
 
@@ -589,7 +543,6 @@ nav a:hover {
 }
 
 .row_info-box {
-    /* background: linear-gradient(rgb(0, 0, 0), rgb(30, 30, 30)); */
     background: #092843;
     width: 100%;
     height: 100%;
@@ -989,18 +942,19 @@ footer {
     .highlighted-games {
         background-size: cover;
         background-position: right;
-        min-height: 50rem;
+        height: 50rem;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .highlighted {
-        margin-top: -20%;
+    .highlighted-games {
+        height: 40rem;
+        background-size: 100%;
+        width: 100%;
     }
 
-    .highlighted-games {
-        background-position-x: -900px;
-        width: 100%;
+    .highlighted-games img {
+        height: 30rem;
     }
 
     .overlay {
@@ -1052,11 +1006,12 @@ footer {
 
     #overlay_cart-icon {
         width: 2rem;
+        height: 2rem;
         margin-right: 0.5rem;
     }
 }
 
-/* RECOMMENDED GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
+/* GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE
 
 @media screen and (max-width: 1795px) {
     .horizontal_rec-box1 {
@@ -1074,34 +1029,14 @@ footer {
     .horizontal_rec-box3 {
         display: none;
     }
-}
+} */
 
-/* COMING GAMES | HORIZONTAL FLEX-BOX RESPONSIVE MODE */
-
-@media screen and (max-width: 1595px) {
-    .horizontal_coming-box1 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .horizontal_coming-box2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .horizontal_coming-box3 {
-        display: none;
-    }
-}
-
-/* HIGHLIGHTED GAMES | RECOMMENDED GAMES | COMING GAMES HORIZONTAL FLEX-BOX - RESPONSIVE MODE */
+/* HIGHLIGHTED GAMES - RESPONSIVE MODE */
 
 @media screen and (max-width: 650px) {
-    .horizontal_flex-container {
+    /* .horizontal_flex-container {
         width: 100%;
-    }
+    } */
 
     .game-nav {
         width: 100%;
@@ -1116,7 +1051,7 @@ footer {
     }
 }
 
-/* RECOMMENDED GAMES RESPONSIVE MODE */
+/* GAMES RESPONSIVE MODE */
 
 @media screen and (max-width: 810px) {
     .rec-box1 {
@@ -1126,38 +1061,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .rec-box1,
-    .rec-box2,
-    .rec-box3,
-    .rec-box4,
-    .rec-box5 {
-        width: 35rem;
-        height: 20rem;
-    }
-    .recommended-text {
-        font-size: 2rem;
-    }
-}
-
-/* COMING GAMES RESPONSIVE MODE */
-
-@media screen and (max-width: 810px) {
-    .coming-box1 {
-        width: 50rem;
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .coming-box1,
-    .coming-box2,
-    .coming-box3,
-    .coming-box4,
-    .coming-box5 {
-        width: 35rem;
-        height: 20rem;
-    }
-    .coming-text {
+    .games-text {
         font-size: 2rem;
     }
 }

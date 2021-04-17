@@ -114,8 +114,18 @@ nav a:hover {
 #search-icon,
 #cart-icon,
 #profile-icon {
-    margin: 2rem;
-    width: 2rem;
+    margin: 2.5rem;
+    width: 2.5rem;
+    transition: 0.1s ease-in-out;
+}
+
+#home-icon:hover,
+#games-icon:hover,
+#contact-icon:hover,
+#search-icon:hover,
+#cart-icon:hover,
+#profile-icon:hover {
+    transform: scale(1.5);
 }
 
 /* SEARCH BAR */
@@ -132,13 +142,17 @@ nav a:hover {
 
 #search {
     width: 20rem;
-    height: 2.4rem;
+    height: 2.6rem;
 }
 
 .fa-search {
     color: #1b203d;
     background: whitesmoke;
     border: 1px solid whitesmoke;
+}
+
+.fa-search:hover {
+    color: rgb(28, 163, 247);
 }
 
 .search-icon {
@@ -410,10 +424,7 @@ footer {
 
 /* PROFILE PAGE RESPONSIVE MODE */
 
-
-
 @media screen and (max-width: 1050px) {
-
     .profile-container {
         width: 70rem;
     }
@@ -438,9 +449,8 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-
     .profile-container {
-         width: 35rem;
+        width: 35rem;
     }
 
     .username {
@@ -471,7 +481,6 @@ footer {
 
     .row-container img {
         width: 13rem;
-
     }
 
     .game-title {
@@ -497,7 +506,6 @@ footer {
         height: 2rem;
         width: 8rem;
     }
-
 
     .download-btn {
         margin-bottom: 8%;

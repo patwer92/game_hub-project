@@ -123,13 +123,17 @@ nav a:hover {
 
 #search {
     width: 20rem;
-    height: 2.4rem;
+    height: 2.6rem;
 }
 
 .fa-search {
     color: #1b203d;
     background: whitesmoke;
     border: 1px solid whitesmoke;
+}
+
+.fa-search:hover {
+    color: rgb(28, 163, 247);
 }
 
 .search-icon {
