@@ -1,5 +1,5 @@
-const url = "http://patsflowerpower.eu/wp-json/wc/store/products";
-const specificUrl = "http://patsflowerpower.eu/wp-json/wc/store/products/272";
+const url = "https://patsflowerpower.eu/wp-json/wc/store/products";
+const specificUrl = "https://patsflowerpower.eu/wp-json/wc/store/products/272";
 const gamesContainer = document.querySelector(".games-container");
 const highlightedGames = document.querySelector(".highlighted-games")
 
