@@ -105,8 +105,18 @@ nav a:hover {
 #search-icon,
 #cart-icon,
 #profile-icon {
-    margin: 2rem;
-    width: 2rem;
+    margin: 2.5rem;
+    width: 2.5rem;
+    transition: 0.1s ease-in-out;
+}
+
+#home-icon:hover,
+#games-icon:hover,
+#contact-icon:hover,
+#search-icon:hover,
+#cart-icon:hover,
+#profile-icon:hover {
+    transform: scale(1.5);
 }
 
 /* SEARCH BAR */
@@ -138,6 +148,7 @@ nav a:hover {
 
 .search-icon {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* SUCCESS PAGE SECTION */
@@ -227,19 +238,19 @@ nav a:hover {
     margin-top: 5%;
     margin-left: 5%;
     border-radius: 2rem;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     background: #1a3983;
 }
 
 .order-game {
-    width: 20rem;
+    width: 40rem;
     height: 100%;
 }
 
 .order-game img {
-    width: 15rem;
+    width: 30rem;
     height: 100%;
     object-fit: cover;
 }
@@ -306,8 +317,10 @@ footer {
     font-size: 1.3rem;
 }
 
-.footer-info h4 {
-    margin-bottom: 20%;
+.footer-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .contact {
@@ -393,6 +406,15 @@ footer {
     }
 
     /* SUCCESS PAGE RESPONSIVE MODE */
+
+    .order-game {
+        width: 20rem;
+        height: 100%;
+    }
+
+    .order-game img {
+        width: 15rem;
+    }
 
     .success-text {
         margin-top: 40%;

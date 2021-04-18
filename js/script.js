@@ -30,8 +30,8 @@ async function makeApiCall() {
                                             </div>
                                             <div class="small-price">
                                                 <p class="small_price-text">
-                                                    <span class="small_prev-price">${products.prices.regular_price}£</span>
-                                                    <span class="small_current-price">${products.prices.price}£</span>
+                                                    <span class="small_prev-price">£${products.prices.regular_price}</span>
+                                                    <span class="small_current-price">£${products.prices.price}</span>
                                                 </p>
                                                 <div class="small-discount">
                                                     <p>-13%</p>
@@ -76,8 +76,8 @@ async function singleApiCall() {
                                         </div>
                                         <div class="overlay-price">
                                             <p class="price-text">
-                                                <span class="previous-price">${json.prices.regular_price}£</span>
-                                                <span class="current-price">${json.prices.price}£</span>
+                                                <span class="previous-price">£${json.prices.regular_price}</span>
+                                                <span class="current-price">£${json.prices.price}</span>
                                             </p>
                                             <div class="discount">
                                                 <p>-13%</p>

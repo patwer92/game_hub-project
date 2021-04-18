@@ -148,6 +148,7 @@ nav a:hover {
 
 .search-icon {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* CHECKOUT PAGE SECTION */
@@ -223,7 +224,7 @@ nav a:hover {
 }
 
 .order-game img {
-    width: 100%;
+    width: 25rem;
     height: 100%;
     object-fit: cover;
 }
@@ -337,7 +338,7 @@ span {
 .proceed-btn {
     margin-top: 10%;
     background: rgb(8, 168, 80);
-    width: 54rem;
+    width: 45rem;
     height: 5rem;
     border-radius: 5rem;
     border: none;
@@ -381,8 +382,10 @@ footer {
     font-size: 1.3rem;
 }
 
-.footer-info h4 {
-    margin-bottom: 20%;
+.footer-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .contact {

@@ -136,6 +136,7 @@ nav a:hover {
 
 .search-icon {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* LOGIN PAGE SECTION */
@@ -261,8 +262,10 @@ footer {
     font-size: 1.3rem;
 }
 
-.footer-info h4 {
-    margin-bottom: 20%;
+.footer-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .contact {

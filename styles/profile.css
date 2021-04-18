@@ -157,6 +157,7 @@ nav a:hover {
 
 .search-icon {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* PROFILE PAGE SECTION */
@@ -335,8 +336,10 @@ footer {
     font-size: 1.3rem;
 }
 
-.footer-info h4 {
-    margin-bottom: 20%;
+.footer-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .contact {
@@ -530,10 +533,6 @@ footer {
         width: 100%;
         padding: 1rem;
         margin: 3.5rem;
-    }
-
-    .footer-info h4 {
-        margin-bottom: 5%;
     }
 
     .contact {
