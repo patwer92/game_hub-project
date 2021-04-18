@@ -671,9 +671,56 @@ footer {
 /* ERROR HANDLING */
 
 .error {
+    color: red;
+    font-size: 1.6rem;
+    border: solid 2px red;
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.1);
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .error {
     font-size: 2rem;
     color: rgb(255, 0, 0);
     font-weight: 600;
+} */
+/* 
+.error {
+    color: red;
+    border: solid 2px red;
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.1);
+    height: 20%;
+} */
+
+.loader {
+    border: 16px solid #c0c0c0;
+    border-top: 16px solid rgb(8, 228, 8);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* NAVIGATION BUTTONS FOR IMAGES (LEFT / RIGHT) */

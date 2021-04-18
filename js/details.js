@@ -1,5 +1,6 @@
 const detailsContainer = document.querySelector(".details");
 const url = "https://patsflowerpower.eu/wp-json/wc/store/products/";
+const errorContainer = document.querySelector(".error-container");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -73,7 +74,7 @@ async function makeApiCall() {
 
     } catch (error) {
         console.log(error);
-        detailsContainer.innerHTML = `<p class="error">An error has occured</p>`;
+        errorContainer.innerHTML = displayError();
     }
 }
 
