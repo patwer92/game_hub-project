@@ -2,6 +2,9 @@ const url = "https://patsflowerpower.eu/wp-json/wc/store/products";
 const specificUrl = "https://patsflowerpower.eu/wp-json/wc/store/products/272";
 const gamesContainer = document.querySelector(".games-container");
 const highlightedGames = document.querySelector(".highlighted_games-section");
+const bestsellerContainer = document.querySelector(".best-container");
+const topRankedContainer = document.querySelector(".top-container");
+const smallCart = document.querySelector(".cart");
 
 
 async function makeApiCall() {
@@ -67,14 +70,6 @@ async function singleApiCall() {
         highlightedGames.innerHTML = "";
         highlightedGames.innerHTML +=`
                                         <div class="highlighted">
-                                        <div class="game-nav highlighted_nav-width">
-                                            <div class="previousgame">
-                                                <p><</p>
-                                            </div>
-                                            <div class="nextgame">
-                                                <p>></p>
-                                            </div>
-                                        </div>
                                         <div class="highlighted-games">
                                             <a href="details.html?id=${json.id}">
                                                 <img src="${json.images[0].src}" alt="${json.images[0].alt}"> 
@@ -106,13 +101,6 @@ async function singleApiCall() {
                                             </div>
                                         </div>
                                     </div>
-                                        <div class="nav-dots" id="games">
-                                            <div class="nav-circle circle1"></div>
-                                            <div class="nav-circle circle2"></div>
-                                            <div class="nav-circle circle3"></div>
-                                            <div class="nav-circle circle4"></div>
-                                            <div class="nav-circle circle5"></div>
-                                        </div>
                                         `;
     } catch (error) {
         console.log(error);
@@ -121,3 +109,61 @@ async function singleApiCall() {
 }
 
 singleApiCall();
+
+async function bestsellerApiCall() {
+
+    try {
+        const response = await fetch(url);
+
+        const data = await response.json();
+
+        console.log(data);
+
+        bestsellerContainer.innerHTML = "";
+
+        let count = 1;
+
+        data.forEach((products) => {
+
+            bestsellerContainer.innerHTML += 
+            `<div class="row-container">
+                <div class="row_ranking-box ranking-blue">
+                    <p>${count++}</p>
+                </div>
+                <div class="row_image-box">
+                    <a href="details.html?id=${products.id}">
+                        <img src="${products.images[0].src}" alt="" />
+                    </a>
+                </div>
+                <div class="row_info-box">
+                    <div class="row_game-title">
+                        <h5>${products.name}</h5>
+                        <p>Standard Edition</p>
+                        <p><strong>PC</strong></p>
+                    </div>
+                    <div class="row_price-text">
+                        <span class="row_prev-price">£${products.prices.regular_price}</span>
+                        <span class="row_current-price">£${products.prices.price}</span>
+                    </div>
+                    <div class="bestseller_call-to-action">
+                        <a href="checkout.html" class="bestseller_cart-btn">
+                            <img
+                                id="bestseller_cart-icon"
+                                src="/images/icons/cart-icon.png"
+                                alt="Shopping Cart Icon"/> 
+                            add to cart
+                        </a>
+                    </div>
+                </div>
+            </div>`;
+        });
+
+    } catch {
+        console.log(error);
+        bestsellerContainer.innerHTML = `<div class="error-container">${displayError()}</div>`
+
+    }
+
+}
+
+bestsellerApiCall();

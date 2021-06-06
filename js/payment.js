@@ -40,28 +40,24 @@ function validateForm() {
         firstNameError.style.display = "none";
     } else {
         firstNameError.style.display = "block";
-        return false;
     }
 
     if (checkLength(lastName.value, 0) === true) {
         lastNameError.style.display = "none";
     } else {
         lastNameError.style.display = "block";
-        return false;
     }
     
     if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
-        return false;
     }
 
     if (checkLength(address.value, 4) === true) {
         addressError.style.display = "none";
     } else  {
         addressError.style.display = "block";
-        return false;
     }
 
 
@@ -69,45 +65,44 @@ function validateForm() {
         zipCodeError.style.display = "none";
     } else {
         zipCodeError.style.display = "block";
-        return false;
     }
 
     if (validateNumber(cardNumber.value) === true && checkLength(cardNumber.value, 18) === true) {
         cardNumberError.style.display = "none";
     }  else {
         cardNumberError.style.display = "block";
-        return false;
     }
 
     if (checkLength(cardHolder.value, 0) === true) {
         cardHolderError.style.display = "none";
     } else {
         cardHolderError.style.display = "block";
-        return false;
     }
 
     if (validateDate(expiration.value) === true) {
         expirationError.style.display = "none";
     } else {
         expirationError.style.display = "block";
-        return false;
     }
 
     if (validateCVC(cvc.value) === true) {
         cvcError.style.display = "none";
     } else {
         cvcError.style.display = "block";
-        return false;
     }
 
- 
-
-    location.href = '/success.html';
-    return true;
-
-
-
-
+    if (checkLength(firstName.value, 0) &&
+        checkLength(lastName.value, 0) &&
+        validateEmail(email.value) &&
+        checkLength(address.value, 4) &&
+        validateNumber(zipCode.value) &&
+        validateNumber(cardNumber.value) &&
+        checkLength(cardHolder.value, 0) &&
+        validateDate(expiration.value) &&
+        validateCVC(cvc.value)
+    ) {
+        location.href = '/success.html';
+    }
 
 }
 

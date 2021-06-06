@@ -17,18 +17,19 @@ function validateNewsletterForm() {
         newsletterNameError.style.display = "none";
     } else {
         newsletterNameError.style.display = "block";
-        return false;
     }
 
     if(validateNewsletterEmail(newsletterEmail.value) === true) {
         newsletterEmailError.style.display = "none";
     } else {
         newsletterEmailError.style.display = "block";
-        return false;
     }
 
-    alert("You are now signed up for our newsletter.");
-    return true;
+    if (checkLength(newsletterName.value, 0) &&
+        validateContactEmail(newsletterEmail.value) 
+    ) {
+        alert("Your message has been successfully sent.");
+    }
     
 
 }

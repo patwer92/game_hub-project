@@ -20,25 +20,26 @@ function validateContactForm(event) {
         contactNameError.style.display = "none";
     } else {
         contactNameError.style.display = "block";
-        return false;
     }
 
     if(validateContactEmail(contactEmail.value) === true) {
         contactEmailError.style.display = "none";
     } else {
         contactEmailError.style.display = "block";
-        return false;
     }
 
     if (checkLength(message.value, 9) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
-        return false;
     }
 
-    alert("Your message has been successfully sent.");
-    return true;
+    if (checkLength(contactName.value, 0) &&
+        validateContactEmail(contactEmail.value) &&
+        checkLength(contactMessage.value, 9)
+    ) {
+        alert("Your message has been successfully sent.");
+    }
     
 
 }
